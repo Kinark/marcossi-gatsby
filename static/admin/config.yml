@@ -41,6 +41,7 @@ collections:
                   widget: object,
                   fields:
                      [
+                        { label: Image, name: image, widget: image },
                         { label: Name, name: name, widget: string },
                         { label: Subtitle, name: subtitle, widget: string },
                         { label: Description, name: description, widget: text },
@@ -245,6 +246,7 @@ collections:
                   widget: object,
                   fields:
                      [
+                        { label: Image, name: image, widget: image },
                         { label: Name, name: name, widget: string },
                         { label: Subtitle, name: subtitle, widget: string },
                         { label: Description, name: description, widget: text },
