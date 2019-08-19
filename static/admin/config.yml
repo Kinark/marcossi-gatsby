@@ -6,17 +6,21 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-   - name: 'project'
-     label: 'Project'
+   - name: 'projects'
+     label: 'Projects'
      folder: 'src/pages/projects'
      create: true
      slug: '{{slug}}'
      fields:
         - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'project-page' }
+        - { label: 'Template Key EN', name: 'templateKeyEn', widget: 'hidden', default: 'project-page.en' }
         - { label: 'Title', name: 'title', widget: 'string' }
+        - { label: 'Title EN', name: 'titleEn', widget: 'string' }
         - { label: 'Featured Post', name: 'featuredpost', widget: 'boolean' }
         - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
+        - { label: 'Excerpt EN', name: 'excerptEn', widget: 'string' }
         - { label: 'Description', name: 'excerpt', widget: 'text' }
+        - { label: 'Description EN', name: 'excerptEn', widget: 'text' }
         - { label: 'Publish Date', name: 'date', widget: 'datetime' }
         - { label: 'Featured Image', name: 'featuredimage', widget: 'image' }
         - { label: 'Gallery', name: 'gallery', widget: 'list', field: { label: 'Image', name: 'image', widget: 'image' } }
@@ -227,7 +231,7 @@ collections:
           label: 'Landing Page EN'
           name: 'indexEn'
           fields:
-             - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
+             - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page.en' }
              - {
                   label: Introduction,
                   name: introduction,
