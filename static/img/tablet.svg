@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="139.301" height="139.301" viewBox="0 0 139.301 139.301">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(10.354 8.124)">
+    <g id="Layer_1" data-name="Layer 1">
+      <rect id="Retângulo_71" data-name="Retângulo 71" width="147" height="50" rx="25" transform="translate(-10.354 95.822) rotate(-45)" fill="#f7afa3" opacity="0.15"/>
+      <path id="Caminho_562" data-name="Caminho 562" d="M97.51,45.72V11a3.63,3.63,0,0,0-3.63-3.63H29.5A3.63,3.63,0,0,0,25.86,11v96.56a3.63,3.63,0,0,0,3.63,3.63H93.87a3.63,3.63,0,0,0,3.63-3.63V45.72Z" fill="#d5dfeb"/>
+      <path id="Caminho_563" data-name="Caminho 563" d="M93.86,111.77H29.51a5.15,5.15,0,0,1-5.14-5.14V10.09a5.15,5.15,0,0,1,5.14-5.14H93.86A5.15,5.15,0,0,1,99,10.09v96.54a5.15,5.15,0,0,1-5.14,5.14ZM29.51,7.95a2.15,2.15,0,0,0-2.14,2.14v96.54a2.15,2.15,0,0,0,2.14,2.14H93.86A2.15,2.15,0,0,0,96,106.63V10.09a2.15,2.15,0,0,0-2.14-2.14Z" fill="#3e6177"/>
+      <circle id="Elipse_12" data-name="Elipse 12" cx="2.72" cy="2.72" r="2.72" transform="translate(59.79 100.61)" fill="#fff"/>
+      <rect id="Retângulo_72" data-name="Retângulo 72" width="54.15" height="79.41" transform="translate(35.51 16.67)" fill="#fff"/>
+      <path id="Caminho_564" data-name="Caminho 564" d="M15.83,56.34a6,6,0,1,1,6-6,6,6,0,0,1-6,6Zm0-9.06a1.244,1.244,0,1,0,0-.01Z" fill="#3e6177"/>
+      <path id="Caminho_565" data-name="Caminho 565" d="M107.37,77.18a6,6,0,1,1,6-6A6,6,0,0,1,107.37,77.18Zm0-9.06a3,3,0,1,0,3,3,3,3,0,0,0-3-3Z" fill="#f5a8a0"/>
+      <circle id="Elipse_13" data-name="Elipse 13" cx="2.49" cy="2.49" r="2.49" transform="translate(102.84 94.27)" fill="#f5a8a0"/>
+      <circle id="Elipse_14" data-name="Elipse 14" cx="2.49" cy="2.49" r="2.49" transform="translate(102.84 53.48)" fill="#d5dfeb"/>
+      <circle id="Elipse_15" data-name="Elipse 15" cx="2.49" cy="2.49" r="2.49" transform="translate(15.83 63.45)" fill="#d5dfeb"/>
+      <rect id="Retângulo_73" data-name="Retângulo 73" width="2" height="12.69" transform="translate(29.88 20.85)" fill="#fff"/>
+      <rect id="Retângulo_74" data-name="Retângulo 74" width="2" height="5.44" transform="translate(29.88 35.35)" fill="#fff"/>
+      <rect id="Retângulo_75" data-name="Retângulo 75" width="2" height="1.81" transform="translate(29.88 42.6)" fill="#fff"/>
+      <rect id="Retângulo_76" data-name="Retângulo 76" width="2" height="12.69" transform="translate(92.32 28.1)" fill="#fff"/>
+      <rect id="Retângulo_77" data-name="Retângulo 77" width="2" height="5.44" transform="translate(92.32 42.6)" fill="#fff"/>
+      <rect id="Retângulo_78" data-name="Retângulo 78" width="2" height="1.81" transform="translate(92.32 49.85)" fill="#fff"/>
+      <rect id="Retângulo_79" data-name="Retângulo 79" width="12.5" height="3" transform="matrix(0.689, -0.725, 0.725, 0.689, 41.475, 36.132)" fill="#f5a8a0" opacity="0.3"/>
+      <rect id="Retângulo_80" data-name="Retângulo 80" width="8.02" height="3" transform="translate(47.357 37.506) rotate(-47.29)" fill="#f5a8a0" opacity="0.3"/>
+      <path id="Caminho_566" data-name="Caminho 566" d="M90.26,98H33.11V14.26H90.26ZM36.11,95H87.26V17.26H36.11Z" fill="#3e6177"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="155.915" height="155.915" viewBox="0 0 155.915 155.915">
+  <g id="Layer_2" data-name="Layer 2" transform="translate(6.811 10.361)">
+    <g id="Layer_1" data-name="Layer 1" transform="translate(-6.811 -10.361)">
+      <rect id="Retângulo_15" data-name="Retângulo 15" width="164.533" height="55.963" rx="25" transform="translate(0 116.343) rotate(-45)" fill="#f7afa3" opacity="0.15"/>
+      <path id="Caminho_519" data-name="Caminho 519" d="M30.84,82.452V38.8l70.514.56V80.773" transform="translate(11.302 16.224)" fill="#fff"/>
+      <path id="Caminho_520" data-name="Caminho 520" d="M50.922,113.129l-2.932-1.657L62.932,85.08l15.379,26.135-2.888,1.7L62.988,91.8Z" transform="translate(13.347 21.744)" fill="#3e6177"/>
+      <rect id="Retângulo_16" data-name="Retângulo 16" width="15.67" height="89.542" rx="7" transform="translate(121.061 38.783) rotate(90)" fill="#f5a8a0"/>
+      <path id="Caminho_521" data-name="Caminho 521" d="M104.615,71.84a7.275,7.275,0,1,1,7.275-7.275A7.275,7.275,0,0,1,104.615,71.84Zm0-11.193a3.917,3.917,0,1,0,3.917,3.917,3.917,3.917,0,0,0-3.917-3.917Z" transform="translate(19.233 18.429)" fill="#f5a8a0"/>
+      <path id="Caminho_522" data-name="Caminho 522" d="M16.615,70.84a7.275,7.275,0,1,1,7.275-7.275,7.275,7.275,0,0,1-7.275,7.275Zm0-11.193a3.917,3.917,0,1,0,3.917,3.917A3.917,3.917,0,0,0,16.615,59.648Z" transform="translate(8.737 18.31)" fill="#3e6177"/>
+      <circle id="Elipse_1" data-name="Elipse 1" cx="3.078" cy="3.078" r="3.078" transform="translate(124.968 96.985)" fill="#f5a8a0"/>
+      <circle id="Elipse_2" data-name="Elipse 2" cx="3.078" cy="3.078" r="3.078" transform="translate(113.775 23.114)" fill="#f5a8a0"/>
+      <circle id="Elipse_3" data-name="Elipse 3" cx="3.078" cy="3.078" r="3.078" transform="translate(28.71 66.765)" fill="#d5dfeb"/>
+      <path id="Caminho_523" data-name="Caminho 523" d="M103.226,42.318H29.354a9.514,9.514,0,0,1,0-19.028h73.872a9.514,9.514,0,1,1,0,19.028ZM29.354,26.648A6.167,6.167,0,0,0,23.2,32.8h0a6.167,6.167,0,0,0,6.156,6.156h73.872a6.156,6.156,0,0,0,0-12.312Z" transform="translate(9.99 14.374)" fill="#3e6177"/>
+      <rect id="Retângulo_17" data-name="Retângulo 17" width="15.67" height="89.542" rx="7" transform="translate(121.845 96.997) rotate(90)" fill="#d5dfeb"/>
+      <path id="Caminho_524" data-name="Caminho 524" d="M102.886,94.318H29.014a9.514,9.514,0,1,1,0-19.028h73.872a9.514,9.514,0,1,1,0,19.028ZM29.014,78.648A6.167,6.167,0,0,0,22.858,84.8h0a6.167,6.167,0,0,0,6.156,6.156h73.872a6.156,6.156,0,1,0,0-12.312Z" transform="translate(9.949 20.576)" fill="#3e6177"/>
+      <rect id="Retângulo_18" data-name="Retângulo 18" width="15.67" height="2.239" transform="translate(97.545 44.38)" fill="#fff"/>
+      <rect id="Retângulo_19" data-name="Retângulo 19" width="6.716" height="2.239" transform="translate(88.591 44.38)" fill="#fff"/>
+      <rect id="Retângulo_20" data-name="Retângulo 20" width="2.239" height="2.239" transform="translate(84.114 44.38)" fill="#fff"/>
+      <rect id="Retângulo_21" data-name="Retângulo 21" width="3.358" height="43.652" transform="translate(39.343 55.013)" fill="#3e6177"/>
+      <rect id="Retângulo_22" data-name="Retângulo 22" width="3.358" height="41.413" transform="translate(109.857 55.572)" fill="#3e6177"/>
+      <rect id="Retângulo_23" data-name="Retângulo 23" width="30.881" height="3.358" transform="matrix(0.689, -0.725, 0.725, 0.689, 60.512, 84.636)" fill="#f5a8a0" opacity="0.3"/>
+      <rect id="Retângulo_24" data-name="Retângulo 24" width="19.8" height="3.358" transform="translate(69.452 84.657) rotate(-47.29)" fill="#f5a8a0" opacity="0.3"/>
+      <rect id="Retângulo_25" data-name="Retângulo 25" width="2.239" height="14.204" transform="translate(37.698 49.517)" fill="#fff"/>
+      <rect id="Retângulo_26" data-name="Retângulo 26" width="2.239" height="6.089" transform="translate(37.698 65.747)" fill="#fff"/>
+      <rect id="Retângulo_27" data-name="Retângulo 27" width="2.239" height="2.026" transform="translate(37.698 73.861)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
