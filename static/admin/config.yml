@@ -223,3 +223,202 @@ collections:
                         { label: 'Message label', name: messageLabel, widget: string }
                      ],
                }
+        - file: 'src/pages/index.en.md'
+          label: 'Landing Page EN'
+          name: 'indexEn'
+          fields:
+             - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
+             - {
+                  label: Introduction,
+                  name: introduction,
+                  widget: object,
+                  fields:
+                     [
+                        { label: Name, name: name, widget: string },
+                        { label: Subtitle, name: name, widget: string },
+                        { label: Description, name: description, widget: text },
+                     ],
+               }
+             - {
+                  label: What we do,
+                  name: whatWeDo,
+                  widget: object,
+                  fields:
+                     [
+                        {
+                           label: 'Feature 1',
+                           name: feature1,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                        {
+                           label: 'Feature 2',
+                           name: feature2,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                        {
+                           label: 'Feature 3',
+                           name: feature3,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                     ],
+               }
+             - {
+                  label: Values,
+                  name: values,
+                  widget: object,
+                  fields:
+                     [
+                        {
+                           label: 'Value 1',
+                           name: value1,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                        {
+                           label: 'Value 2',
+                           name: value2,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                        {
+                           label: 'Value 3',
+                           name: value3,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                     ],
+               }
+             - {
+                  label: 'Where we are',
+                  name: whereWeAre,
+                  widget: object,
+                  fields:
+                     [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                        { label: Address label, name: addressLabel, widget: string },
+                        { label: Address line 1, name: addressLine1, widget: string },
+                        { label: Address line 2, name: addressLine2, widget: string },
+                        { label: Coords, name: coords, widget: string },
+                        { label: Map, name: map, widget: map },
+                     ],
+               }
+             - {
+                  label: 'Testimonials section',
+                  name: testimonialsSection,
+                  widget: object,
+                  fields:
+                     [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                        {
+                           label: Testimonials,
+                           name: testimonials,
+                           widget: 'list',
+                           field:
+                              {
+                                 label: Testimonial,
+                                 name: testimonial,
+                                 widget: object,
+                                 fields:
+                                    [
+                                       { label: Photo, name: photo, widget: image },
+                                       { label: Name, name: name, widget: string },
+                                       { label: Position, name: position, widget: string },
+                                       { label: Saying, name: saying, widget: text },
+                                    ],
+                              },
+                        },
+                     ],
+               }
+             - {
+                  label: About,
+                  name: about,
+                  widget: object,
+                  fields:
+                     [
+                        { label: Title, name: title, widget: string },
+                        { label: Description, name: description, widget: text },
+                        {
+                           label: 'Section 1',
+                           name: section1,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                        {
+                           label: 'Section 2',
+                           name: section2,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                        {
+                           label: 'Section 3',
+                           name: section3,
+                           widget: object,
+                           fields:
+                              [
+                                 { label: Image, name: image, widget: image },
+                                 { label: Title, name: title, widget: string },
+                                 { label: Description, name: description, widget: text },
+                              ],
+                        },
+                     ],
+               }
+             - {
+                  label: Contact,
+                  name: contact,
+                  widget: object,
+                  fields:
+                     [
+                        { label: Image, name: image, widget: image },
+                        { label: Title, name: title, widget: string },
+                        { label: 'Name label', name: nameLabel, widget: string },
+                        { label: 'Email label', name: emailLabel, widget: string },
+                        { label: 'Message label', name: messageLabel, widget: string }
+                     ],
+               }
