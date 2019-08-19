@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Typekit from 'react-typekit'
-import styled from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import './styles.scss'
 import useSiteMetadata from './SiteMetadata'
 import { withPrefix } from 'gatsby'
@@ -45,9 +45,19 @@ const TemplateWrapper = ({ children }) => {
             <img src={markdownRemark.frontmatter.backgroundImage.publicURL} alt="" />
          </BackgroundImage>
          <Typekit kitId="wbo1ihc" />
+         <GlobalStyle />
       </React.Fragment>
    )
 }
+
+const GlobalStyle = createGlobalStyle`
+  body {
+   font-family: soleil, sans-serif;
+   color: #3E3D5D;
+   font-size: 16px;
+   background-color: #FBFCFF;
+  }
+`
 
 const BackgroundImage = styled.div`
    position: absolute;
@@ -58,7 +68,7 @@ const BackgroundImage = styled.div`
    margin: auto;
    top: 19rem;
    img {
-     width: 125%;
+      width: 125%;
    }
 `
 
