@@ -4,7 +4,7 @@ const Subtitle = styled.h1`
    color: #3a386e;
    font-weight: 300;
    font-size: 28px;
-   margin: 0;
+   margin: 1rem 0;
    span {
       color: #D6CF66;
    }
