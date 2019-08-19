@@ -5,6 +5,7 @@ import styled from 'styled-components';
 import Title from '../Title'
 import Subtitle from '../Subtitle'
 import ResponsiveImg from '../ResponsiveImg'
+import { ButtonLink } from '../Button'
 
 const Introduction = () => {
    const { markdownRemark } = useStaticQuery(graphql`
@@ -36,6 +37,7 @@ const Introduction = () => {
                   <Title>{frontmatter.introduction.name}</Title>
                   <Subtitle dangerouslySetInnerHTML={{ __html: frontmatter.introduction.subtitle }} />
                   <div>{frontmatter.introduction.description}</div>
+                  <ButtonLink to="/#contact">Vamos conversar!</ButtonLink>
                </div>
                <div className="col xs12 l7 hide-on-med-and-down right-align">
                   <ResponsiveImg inline maxWidth="463" src={frontmatter.introduction.image.publicURL} alt="" />
