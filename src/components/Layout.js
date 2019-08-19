@@ -2,10 +2,12 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import Typekit from 'react-typekit'
 import styled, { createGlobalStyle } from 'styled-components'
+import { withPrefix, graphql, useStaticQuery } from 'gatsby'
+
+import colors from '../constants/colors'
+
 import './styles.scss'
 import useSiteMetadata from './SiteMetadata'
-import { withPrefix } from 'gatsby'
-import { graphql, useStaticQuery } from 'gatsby'
 
 const TemplateWrapper = ({ children }) => {
    const { markdownRemark } = useStaticQuery(graphql`
@@ -53,9 +55,9 @@ const TemplateWrapper = ({ children }) => {
 const GlobalStyle = createGlobalStyle`
   body {
    font-family: soleil, sans-serif;
-   color: #3E3D5D;
+   color: ${colors.BODY};
    font-size: 16px;
-   background-color: #FBFCFF;
+   background-color: ${colors.BG};
   }
 `
 
