@@ -6,6 +6,7 @@ introduction:
   description: >-
     Trabalhamos com gente do mundo todo. Tenho certeza que vamos encontrar
     exatamente o que você precisa!
+  image: /img/remote-team.svg
   name: Marcossi Design
   subtitle: 'Trabalhando por você, não importa onde esteja.'
 whatWeDo:
