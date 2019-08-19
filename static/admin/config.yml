@@ -45,11 +45,12 @@ collections:
                      ],
                }
              - {
-                  label: What we do,
+                  label: 'What we do',
                   name: whatWeDo,
                   widget: object,
                   fields:
                      [
+                        { label: Title, name: title, widget: string },
                         {
                            label: 'Feature 1',
                            name: feature1,
@@ -126,6 +127,7 @@ collections:
                         },
                      ],
                }
+             - { label: 'Projects title', name: projecsTitle, widget: string }
              - {
                   label: 'Where we are',
                   name: whereWeAre,
@@ -224,7 +226,7 @@ collections:
                         { label: Title, name: title, widget: string },
                         { label: 'Name label', name: nameLabel, widget: string },
                         { label: 'Email label', name: emailLabel, widget: string },
-                        { label: 'Message label', name: messageLabel, widget: string }
+                        { label: 'Message label', name: messageLabel, widget: string },
                      ],
                }
         - file: 'src/pages/index.en.md'
@@ -244,11 +246,12 @@ collections:
                      ],
                }
              - {
-                  label: What we do,
+                  label: 'What we do',
                   name: whatWeDo,
                   widget: object,
                   fields:
                      [
+                        { label: Title, name: title, widget: string },
                         {
                            label: 'Feature 1',
                            name: feature1,
@@ -325,6 +328,7 @@ collections:
                         },
                      ],
                }
+             - { label: 'Projects title', name: projecsTitle, widget: string }
              - {
                   label: 'Where we are',
                   name: whereWeAre,
@@ -423,6 +427,6 @@ collections:
                         { label: Title, name: title, widget: string },
                         { label: 'Name label', name: nameLabel, widget: string },
                         { label: 'Email label', name: emailLabel, widget: string },
-                        { label: 'Message label', name: messageLabel, widget: string }
+                        { label: 'Message label', name: messageLabel, widget: string },
                      ],
                }
