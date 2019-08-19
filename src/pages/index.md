@@ -1,4 +1,5 @@
 ---
+templateKey: index-page
 logo: /img/Logo.svg
 backgroundImage: /img/bg-img.svg
 introduction:
