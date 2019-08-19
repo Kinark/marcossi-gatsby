@@ -3,5 +3,5 @@ export default {
    BG: '#FBFCFF',
    BODY: '#3E3D5D',
    ACCENT: '#D6CF66',
-   SHADOW: '#3A386E'
+   SHADOW: 'rgba(58, 56, 110, 0.15)'
 }
