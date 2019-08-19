@@ -1,4 +1,6 @@
 ---
+logo: /img/Logo.svg
+backgroundImage: /img/bg-img.svg
 introduction:
   description: >-
     Trabalhamos com gente do mundo todo. Tenho certeza que vamos encontrar
@@ -133,6 +135,7 @@ about:
       o mundo mais bonito e, acima de tudo, facilitar a vida de pessoas.
     image: /img/startup.svg
     title: 'Acima de tudo, <span>vontade</span> de fazer do mundo um lugar melhor.'
+  sectionTitle: Sobre a Marcossi Design
   title: 'Uma breve história, caso você não se importe.'
 contact:
   emailLabel: Email
