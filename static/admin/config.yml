@@ -33,6 +33,8 @@ collections:
           name: 'index'
           fields:
              - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
+             - { label: Logo, name: logo, widget: image }
+             - { label: 'Background image', name: 'backgroundImage', widget: image }
              - {
                   label: Introduction,
                   name: introduction,
@@ -179,6 +181,7 @@ collections:
                   widget: object,
                   fields:
                      [
+                        { label: Section title, name: sectionTitle, widget: string },
                         { label: Title, name: title, widget: string },
                         { label: Description, name: description, widget: text },
                         {
@@ -233,7 +236,9 @@ collections:
           label: 'Landing Page EN'
           name: 'indexEn'
           fields:
-             - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page.en' }
+             - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page.en' },
+             - { label: Logo, name: logo, widget: image }
+             - { label: 'Background image', name: 'backgroundImage', widget: image }
              - {
                   label: Introduction,
                   name: introduction,
@@ -380,6 +385,7 @@ collections:
                   widget: object,
                   fields:
                      [
+                        { label: Section title, name: sectionTitle, widget: string },
                         { label: Title, name: title, widget: string },
                         { label: Description, name: description, widget: text },
                         {
