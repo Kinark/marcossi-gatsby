@@ -55,7 +55,7 @@ values:
       maior número de pessoas!
     image: /img/dog.svg
     title: Isso tudo porque acreditamos em <span>seres humanos</span> como um todo
-projecsTitle: Um pouco do nosso trabalho
+projectsTitle: Um pouco do nosso trabalho
 whereWeAre:
   addressLabel: Cá estamos
   addressLine1: 'Brazil - CEP: 12947-200'
