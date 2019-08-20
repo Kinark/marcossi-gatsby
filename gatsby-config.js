@@ -68,6 +68,14 @@ module.exports = {
       'gatsby-plugin-sass',
       'gatsby-plugin-styled-components',
       {
+         resolve: 'gatsby-plugin-web-font-loader',
+         options: {
+            typekit: {
+               id: 'wbo1ihc'
+            }
+         }
+      },
+      {
          resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
          options: {
             develop: false, // Activates purging in npm run develop

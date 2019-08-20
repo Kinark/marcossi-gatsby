@@ -1,6 +1,5 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import Typekit from 'react-typekit'
 import { createGlobalStyle } from 'styled-components'
 import { withPrefix, graphql, useStaticQuery } from 'gatsby'
 
@@ -43,7 +42,6 @@ const TemplateWrapper = ({ children }) => {
          </Helmet>
          {/* <Navbar /> */}
          <React.Fragment>{children}</React.Fragment>
-         <Typekit kitId="wbo1ihc" />
          <GlobalStyle bgImg={markdownRemark.frontmatter.backgroundImage.publicURL} />
       </React.Fragment>
    )
