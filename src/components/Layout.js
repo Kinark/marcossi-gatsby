@@ -56,7 +56,7 @@ const GlobalStyle = createGlobalStyle`
    font-size: 16px;
    background-color: ${colors.BG};
    background-image: url(${({ bgImg }) => bgImg});
-   background-position: center 320px;
+   background-position: 56% 550px;
    background-repeat: no-repeat;
   }
 `
