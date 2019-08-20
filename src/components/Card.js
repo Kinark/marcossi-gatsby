@@ -6,7 +6,7 @@ const Card = styled.div`
    background-color: ${colors.CARD_BG};
    border-radius: 20px;
    padding: 0.75rem;
-   margin: 1rem 0;
+   margin: 2rem 0;
    box-shadow: 0px 10px 15px 0px ${colors.SHADOW};
    transition: box-shadow 250ms ease-out;
    position: relative;
