@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import Typekit from 'react-typekit'
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 import { withPrefix, graphql, useStaticQuery } from 'gatsby'
 
 import colors from '../constants/colors'
