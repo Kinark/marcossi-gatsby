@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 
 import Layout from '../components/Layout'
 import Introduction from '../components/indexComponents/Introduction'
-// import WhatWeDo from '../components/indexComponents/WhatWeDo'
+import WhatWeDo from '../components/indexComponents/WhatWeDo'
 // import Values from '../components/indexComponents/Values'
 // import Projects from '../components/indexComponents/Projects'
 // import FindUs from '../components/indexComponents/FindUs'
@@ -15,13 +15,13 @@ export default class IndexPageTemplate extends PureComponent {
       return (
       <Layout>
          <Introduction />
-         {/* <WhatWeDo />
-         <Values />
-         <Projects />
-         <FindUs />
-         <Testimonials />
-         <About />
-         <Contact /> */}
+         <WhatWeDo />
+         {/* <Values /> */}
+         {/* <Projects /> */}
+         {/* <FindUs /> */}
+         {/* <Testimonials /> */}
+         {/* <About /> */}
+         {/* <Contact /> */}
       </Layout>
       )
    }
