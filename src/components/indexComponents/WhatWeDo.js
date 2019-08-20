@@ -71,7 +71,3 @@ const WhatWeDo = () => {
 }
 
 export default WhatWeDo
-
-const Section = styled.section`
-   padding: 20vh 0;
-`
