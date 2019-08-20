@@ -43,11 +43,8 @@ const TemplateWrapper = ({ children }) => {
          </Helmet>
          {/* <Navbar /> */}
          <React.Fragment>{children}</React.Fragment>
-         <BackgroundImage>
-            <img src={markdownRemark.frontmatter.backgroundImage.publicURL} alt="" />
-         </BackgroundImage>
          <Typekit kitId="wbo1ihc" />
-         <GlobalStyle />
+         <GlobalStyle bgImg={markdownRemark.frontmatter.backgroundImage.publicURL} />
       </React.Fragment>
    )
 }
@@ -58,20 +55,10 @@ const GlobalStyle = createGlobalStyle`
    color: ${colors.BODY};
    font-size: 16px;
    background-color: ${colors.BG};
+   background-image: url(${({ bgImg }) => bgImg});
+   background-position: center 320px;
+   background-repeat: no-repeat;
   }
-`
-
-const BackgroundImage = styled.div`
-   position: absolute;
-   left: -35%;
-   right: 0;
-   background-size: cover;
-   z-index: -1;
-   margin: auto;
-   top: 19rem;
-   img {
-      width: 125%;
-   }
 `
 
 export default TemplateWrapper
