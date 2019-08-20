@@ -105,3 +105,8 @@ Center text on mobile
       text-align: center;
    }
 }
+.center-on-med-and-down {
+   @media #{$medium-and-down} {
+      text-align: center !important;
+   }
+}
