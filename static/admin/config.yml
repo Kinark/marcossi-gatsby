@@ -44,7 +44,7 @@ collections:
                         { label: Image, name: image, widget: image },
                         { label: Name, name: name, widget: string },
                         { label: Subtitle, name: subtitle, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                      ],
                }
              - {
@@ -62,7 +62,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -73,7 +73,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -84,7 +84,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                      ],
@@ -103,7 +103,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -114,7 +114,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -125,7 +125,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                      ],
@@ -139,7 +139,7 @@ collections:
                      [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                         { label: Address label, name: addressLabel, widget: string },
                         { label: Address line 1, name: addressLine1, widget: string },
                         { label: Address line 2, name: addressLine2, widget: string },
@@ -155,7 +155,7 @@ collections:
                      [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                         {
                            label: Testimonials,
                            name: testimonials,
@@ -184,7 +184,7 @@ collections:
                      [
                         { label: Section title, name: sectionTitle, widget: string },
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                         {
                            label: 'Section 1',
                            name: section1,
@@ -193,7 +193,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -204,7 +204,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -215,7 +215,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                      ],
@@ -249,7 +249,7 @@ collections:
                         { label: Image, name: image, widget: image },
                         { label: Name, name: name, widget: string },
                         { label: Subtitle, name: subtitle, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                      ],
                }
              - {
@@ -267,7 +267,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -278,7 +278,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -289,7 +289,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                      ],
@@ -308,7 +308,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -319,7 +319,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -330,7 +330,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                      ],
@@ -344,7 +344,7 @@ collections:
                      [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                         { label: Address label, name: addressLabel, widget: string },
                         { label: Address line 1, name: addressLine1, widget: string },
                         { label: Address line 2, name: addressLine2, widget: string },
@@ -360,7 +360,7 @@ collections:
                      [
                         { label: Image, name: image, widget: image },
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                         {
                            label: Testimonials,
                            name: testimonials,
@@ -389,7 +389,7 @@ collections:
                      [
                         { label: Section title, name: sectionTitle, widget: string },
                         { label: Title, name: title, widget: string },
-                        { label: Description, name: description, widget: text },
+                        { label: Description, name: description, widget: markdown },
                         {
                            label: 'Section 1',
                            name: section1,
@@ -398,7 +398,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -409,7 +409,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                         {
@@ -420,7 +420,7 @@ collections:
                               [
                                  { label: Image, name: image, widget: image },
                                  { label: Title, name: title, widget: string },
-                                 { label: Description, name: description, widget: text },
+                                 { label: Description, name: description, widget: markdown },
                               ],
                         },
                      ],
