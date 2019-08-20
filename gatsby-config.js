@@ -7,7 +7,6 @@ module.exports = {
          'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.'
    },
    plugins: [
-      'gatsby-plugin-react-helmet',
       'gatsby-plugin-sass',
       {
          // keep as first gatsby-source-filesystem plugin for gatsby image support
@@ -75,6 +74,7 @@ module.exports = {
             purgeOnly: ['/styles.scss'] // applies purging only on the bulma css file
          }
       }, // must be after other CSS plugins
+      'gatsby-plugin-react-helmet',
       'gatsby-plugin-netlify' // make sure to keep it last in the array
    ],
    // for avoiding CORS while developing Netlify Functions locally
