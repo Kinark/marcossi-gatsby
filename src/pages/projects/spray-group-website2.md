@@ -21,7 +21,7 @@ descriptionEn: >-
   eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
   voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
 date: 2019-08-20T11:06:39.135Z
-featuredimage: /img/grupo-de-máscara-3.png
+featuredimage: /img/grupo-de-mascara-3.png
 gallery:
   - image: /img/b1013c96aefb4346939e0c923bd2a6eb_3_1920.png
   - image: /img/afdc328a059a41a0962af682c50437ed_15_1920.png
