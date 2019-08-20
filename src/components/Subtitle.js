@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import colors from '../constants/colors'
 
 
-const Subtitle = styled.h1`
+const Subtitle = styled.h3`
    color: ${colors.TITLE};
    font-weight: 300;
    font-size: 28px;
