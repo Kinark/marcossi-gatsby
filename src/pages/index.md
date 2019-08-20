@@ -39,7 +39,7 @@ values:
   value2:
     description: >-
       Utilizaremos sempre as últimas tecnologias para construir exatamente
-      aquilo que você está precisando, e não cobraremos mais do que o justo.
+      aquilo que você está precisando, e não cobraremos mais do que o justo.  
 
 
       Por exemplo, você sabia que a maioria dos nossos clientes não pagam
