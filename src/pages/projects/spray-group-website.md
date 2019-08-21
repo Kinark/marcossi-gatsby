@@ -23,6 +23,7 @@ featuredimage: /img/grupo-de-mascara-3.png
 externalLink: ''
 gallery:
   - image: /img/b1013c96aefb4346939e0c923bd2a6eb_3_1920.png
+    label: ''
   - image: /img/afdc328a059a41a0962af682c50437ed_15_1920.png
   - image: /img/518ca22c70604f1db1ef75d302f00401_4_1920.png
 ---
