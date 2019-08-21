@@ -20,7 +20,7 @@ const About = () => {
 
    const { markdownRemark } = useStaticQuery(graphql`
       query ContactQuery {
-         markdownRemark {
+         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
             frontmatter {
                contact {
                   image {

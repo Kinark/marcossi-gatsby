@@ -10,7 +10,7 @@ import ResponsiveImg from '../ResponsiveImg'
 const FindUs = () => {
    const { markdownRemark } = useStaticQuery(graphql`
       query FindUsQuery {
-         markdownRemark {
+         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
             frontmatter {
                whereWeAre {
                   addressLabel

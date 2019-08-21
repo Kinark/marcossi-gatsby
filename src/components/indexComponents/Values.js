@@ -8,7 +8,7 @@ import MDP from '../MDP'
 const Values = () => {
    const { markdownRemark } = useStaticQuery(graphql`
       query ValuesQuery {
-         markdownRemark {
+         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
             frontmatter {
                values {
                   value1 {

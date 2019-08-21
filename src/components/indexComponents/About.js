@@ -10,7 +10,7 @@ import { ButtonLink } from '../Button'
 const About = () => {
    const { markdownRemark } = useStaticQuery(graphql`
       query AboutQuery {
-         markdownRemark {
+         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
             frontmatter {
                logo {
                   publicURL

@@ -9,7 +9,7 @@ import ResponsiveImg from '../ResponsiveImg'
 const WhatWeDo = () => {
    const { markdownRemark } = useStaticQuery(graphql`
       query WhatWeDoQuery {
-         markdownRemark {
+         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
             frontmatter {
                whatWeDo {
                   title
