@@ -51,7 +51,7 @@
     "build:app": "npm run clean && gatsby build",
     "build:lambda": "netlify-lambda build src/lambda",
     "build": "run-p build:**",
-    "develop": "npm run clean && gatsby develop",
+    "develop": "npm run clean && gatsby develop -H 0.0.0.0 -p 8000",
     "serve": "gatsby serve",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"{gatsby-*.js,src/**/*.js}\"",
     "test": "echo \"Error: no test specified\" && exit 1"
