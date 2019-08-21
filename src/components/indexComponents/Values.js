@@ -1,7 +1,6 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 
-import Title from '../Title'
 import Subtitle from '../Subtitle'
 import ResponsiveImg from '../ResponsiveImg'
 import MDP from '../MDP'
