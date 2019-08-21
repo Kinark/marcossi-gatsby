@@ -57,6 +57,9 @@ const GlobalStyle = createGlobalStyle`
    background-position: 56% 550px;
    background-repeat: no-repeat;
   }
+  *:focus {
+     outline: none;
+  }
 `
 
 export default TemplateWrapper
