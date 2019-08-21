@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react'
 import styled from 'styled-components'
 import Lightbox from 'react-image-lightbox'
+import { graphql } from 'gatsby'
 
 import colors from '../constants/colors'
 
