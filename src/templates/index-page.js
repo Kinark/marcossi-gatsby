@@ -8,7 +8,7 @@ import Projects from '../components/indexComponents/Projects'
 import FindUs from '../components/indexComponents/FindUs'
 // import Testimonials from '../components/indexComponents/Testimonials'
 import About from '../components/indexComponents/About'
-// import Contact from '../components/indexComponents/Contact'
+import Contact from '../components/indexComponents/Contact'
 
 export default class IndexPageTemplate extends PureComponent {
    render() {
@@ -21,7 +21,7 @@ export default class IndexPageTemplate extends PureComponent {
          <FindUs />
          {/* <Testimonials /> */}
          <About />
-         {/* <Contact /> */}
+         <Contact />
       </Layout>
       )
    }
