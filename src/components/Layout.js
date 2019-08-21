@@ -11,7 +11,7 @@ import useSiteMetadata from './SiteMetadata'
 const TemplateWrapper = ({ children }) => {
    const { markdownRemark } = useStaticQuery(graphql`
       query LayoutQuery {
-         markdownRemark {
+         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
             frontmatter {
                backgroundImage {
                   publicURL
