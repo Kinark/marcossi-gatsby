@@ -4,10 +4,8 @@ import styled from 'styled-components'
 
 import colors from '../../constants/colors'
 
-import Title from '../Title'
 import Subtitle from '../Subtitle'
 import ResponsiveImg from '../ResponsiveImg'
-import { ButtonLink } from '../Button'
 
 const FindUs = () => {
    const { markdownRemark } = useStaticQuery(graphql`
