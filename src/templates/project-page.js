@@ -57,7 +57,11 @@ export default class ProjectPage extends PureComponent {
                   {frontmatter.gallery.map((el, i) => (
                      <React.Fragment key={el.image.publicURL}>
                         <StyledImg onClick={() => this.setState({ isOpen: true, photoIndex: i })} src={el.image.publicURL} alt="" />
-                        <MDP>{el.label}</MDP>
+                        <div className="row xs-center section padded no-pad-top">
+                           <div className="col xs12 l6">
+                              <MDP>{el.label}</MDP>
+                           </div>
+                        </div>
                      </React.Fragment>
                   ))}
                </div>
@@ -83,7 +87,7 @@ const StyledImg = styled.img`
    cursor: pointer;
    transition: filter 250ms;
    &:hover {
-      filter: brightness(75%)
+      filter: brightness(75%);
    }
 `
 
