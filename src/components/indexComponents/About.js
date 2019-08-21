@@ -1,6 +1,5 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import styled from 'styled-components'
 
 import Title from '../Title'
 import Subtitle from '../Subtitle'
