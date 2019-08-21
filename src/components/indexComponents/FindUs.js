@@ -30,7 +30,7 @@ const FindUs = () => {
    const { frontmatter } = markdownRemark
    const { whereWeAre } = frontmatter
    return (
-      <Section>
+      <section className="section padded">
          <div className="container">
             <div className="row xs-middle">
                <div className="col xs12 l6">
@@ -54,15 +54,11 @@ const FindUs = () => {
                </div>
             </div>
          </div>
-      </Section>
+      </section>
    )
 }
 
 export default FindUs
-
-const Section = styled.section`
-   padding: 20vh 0;
-`
 
 const Map = styled.iframe`
    border-radius: 20px;

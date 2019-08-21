@@ -42,7 +42,7 @@ const WhatWeDo = () => {
    const { frontmatter } = markdownRemark
    const { whatWeDo } = frontmatter
    return (
-      <section className="section padded">
+      <section className="section">
          <div className="container center">
             <Card>
                <Title className="section padded">{whatWeDo.title}</Title>

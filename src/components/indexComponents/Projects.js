@@ -9,7 +9,7 @@ import Title from '../Title'
 import MDP from '../MDP'
 import { ButtonLink, ButtonAnchor } from '../Button'
 
-const WhatWeDo = () => {
+const Projects = () => {
    const { allMarkdownRemark } = useStaticQuery(graphql`
       query ProjectsQuery {
          allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "project-page" } } }) {
@@ -53,7 +53,7 @@ const WhatWeDo = () => {
    )
 }
 
-export default WhatWeDo
+export default Projects
 
 const StyledCard = styled(Card)`
    padding: 0;

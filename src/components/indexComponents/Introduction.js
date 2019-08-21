@@ -51,5 +51,5 @@ const Introduction = () => {
 export default Introduction
 
 const Section = styled.section`
-   padding: 20vh 0;
+   padding: 20vh 0 10vh;
 `

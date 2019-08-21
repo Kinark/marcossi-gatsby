@@ -41,9 +41,8 @@ const Values = () => {
    const { frontmatter } = markdownRemark
    const { values } = frontmatter
    return (
-      <section className="section">
+      <section className="section padded">
          <div className="container ">
-            <Title className="section padded">{values.title}</Title>
             <div className="row xs-middle section padded no-pad-top">
                <div className="col xs12 l6 left-align center-on-med-and-down">
                   <ResponsiveImg inline maxWidth="510" src={values.value1.image.publicURL} alt="" />
