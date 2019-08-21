@@ -23,12 +23,12 @@ collections:
         - { label: 'Description EN', name: 'descriptionEn', widget: 'markdown' }
         - { label: 'Publish Date', name: 'date', widget: 'datetime' }
         - { label: 'Featured Image', name: 'featuredimage', widget: 'image' }
-        - { label: 'External link', name: 'externalLink', widget: 'string', required: false }
+        - { label: 'External link', name: 'externalLink', widget: 'string', required: false, default: '' }
         - {
              label: 'Gallery',
              name: 'gallery',
              widget: 'list',
-             fields: [{ label: 'Image', name: 'image', widget: 'image' }, { label: 'Label', name: 'label', widget: 'markdown', required: false }],
+             fields: [{ label: 'Image', name: 'image', widget: 'image' }, { label: 'Label', name: 'label', widget: 'markdown', required: false, default: '' }],
           }
 
    - name: 'pages'
