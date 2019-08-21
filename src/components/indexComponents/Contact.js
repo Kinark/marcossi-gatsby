@@ -52,6 +52,9 @@ const About = () => {
                type: 'success',
                confirmButtonText: 'Legal!'
             })
+            resetName()
+            resetEmail()
+            resetMessage()
          })
          .catch(error => {
             setLoading(false)
@@ -62,10 +65,6 @@ const About = () => {
                confirmButtonText: 'Que pena :('
             })
          })
-
-      // resetName()
-      // resetEmail()
-      // resetMessage()
    }
 
    const { frontmatter } = markdownRemark
