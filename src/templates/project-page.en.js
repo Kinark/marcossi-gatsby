@@ -1,16 +1,11 @@
-export default class IndexPageTemplate extends PureComponent {
+import React, { PureComponent } from 'react'
+
+export default class ProjectPage extends PureComponent {
     render() {
-       return (
-       <Layout>
-          <Introduction />
-          <WhatWeDo />
-          <Values />
-          <Projects />
-          <FindUs />
-          <Testimonials />
-          <About />
-          <Contact />
-       </Layout>
-       )
+        return (
+            <div>
+                project
+            </div>
+        )
     }
- }
+}
