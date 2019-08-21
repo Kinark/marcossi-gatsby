@@ -7,12 +7,23 @@ module.exports = {
          'This repo contains an example business website that is built with Gatsby, and Netlify CMS.It follows the JAMstack architecture by using Git as a single source of truth, and Netlify for continuous deployment, and CDN distribution.'
    },
    plugins: [
+      'gatsby-plugin-react-helmet',
+      'gatsby-plugin-sass',
+      'gatsby-plugin-styled-components',
+      {
+         resolve: 'gatsby-plugin-web-font-loader',
+         options: {
+            typekit: {
+               id: 'wbo1ihc'
+            }
+         }
+      },
       {
          // keep as first gatsby-source-filesystem plugin for gatsby image support
          resolve: 'gatsby-source-filesystem',
          options: {
             path: `${__dirname}/static/img`,
-            name: 'assets'
+            name: 'uploads'
          }
       },
       {
@@ -29,8 +40,8 @@ module.exports = {
             name: 'images'
          }
       },
-      'gatsby-plugin-sharp',
       'gatsby-transformer-sharp',
+      'gatsby-plugin-sharp',
       {
          resolve: 'gatsby-transformer-remark',
          options: {
@@ -38,7 +49,7 @@ module.exports = {
                {
                   resolve: 'gatsby-remark-relative-images',
                   options: {
-                     name: 'assets'
+                     name: 'uploads'
                   }
                },
                {
@@ -65,16 +76,6 @@ module.exports = {
             modulePath: `${__dirname}/src/cms/cms.js`
          }
       },
-      'gatsby-plugin-sass',
-      'gatsby-plugin-styled-components',
-      {
-         resolve: 'gatsby-plugin-web-font-loader',
-         options: {
-            typekit: {
-               id: 'wbo1ihc'
-            }
-         }
-      },
       {
          resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
          options: {
@@ -82,7 +83,6 @@ module.exports = {
             purgeOnly: ['/styles.scss'] // applies purging only on the bulma css file
          }
       }, // must be after other CSS plugins
-      'gatsby-plugin-react-helmet',
       'gatsby-plugin-netlify' // make sure to keep it last in the array
    ],
    // for avoiding CORS while developing Netlify Functions locally
