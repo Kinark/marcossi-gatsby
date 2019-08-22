@@ -37,6 +37,7 @@ collections:
         - file: 'src/pages/index.md'
           label: 'Landing Page'
           name: 'index'
+          delete: false
           fields:
              - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
              - { label: 'Template Key En', name: 'templateKeyEn', widget: 'hidden', default: '' }
@@ -167,12 +168,13 @@ collections:
                            label: Testimonials,
                            name: testimonials,
                            widget: 'list',
-                           fields: [
-                               { label: Photo, name: photo, widget: image },
-                               { label: Name, name: name, widget: string },
-                               { label: Position, name: position, widget: string },
-                               { label: Saying, name: saying, widget: text }
-                               ]
+                           fields:
+                              [
+                                 { label: Photo, name: photo, widget: image },
+                                 { label: Name, name: name, widget: string },
+                                 { label: Position, name: position, widget: string },
+                                 { label: Saying, name: saying, widget: text },
+                              ],
                         },
                      ],
                }
@@ -236,6 +238,7 @@ collections:
         - file: 'src/pages/index.en.md'
           label: 'Landing Page EN'
           name: 'indexEn'
+          delete: false
           fields:
              - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page.en' }
              - { label: 'Template Key En', name: 'templateKeyEn', widget: 'hidden', default: '' }
