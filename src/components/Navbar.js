@@ -69,7 +69,7 @@ const Nav = styled.nav`
    top: 0;
    left: 0;
    width: 100%;
-   background-color: rgba(251, 252, 255, 0.75);
+   background-color: rgba(251, 252, 255, 0.85);
    z-index: 2;
    padding: 0.75rem 0;
    .container {
@@ -118,19 +118,20 @@ const sidebarStyles = {
       height: '100%'
    },
    bmMenu: {
-      background: colors.TITLE,
+      background: colors.BG,
       padding: '2.5em 1.5em 0',
       fontSize: '1.15em'
    },
    bmMorphShape: {
-      fill: colors.TITLE
+      fill: colors.BG
    },
    bmItemList: {
-      color: colors.BG,
+      color: colors.TITLE,
       padding: '0.8em'
    },
    bmItem: {
-      display: 'block'
+      display: 'block',
+      padding: '0.5rem 0'
    },
    bmOverlay: {
       background: 'rgba(0, 0, 0, 0.3)'
