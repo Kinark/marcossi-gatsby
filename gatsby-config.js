@@ -6,6 +6,7 @@ module.exports = {
       description: 'Marcossi Design é uma empresa de branding e desenvolvimento de aplicativos, sites e sistemas. Fazemos o que amamos!'
    },
    plugins: [
+      'gatsby-plugin-offline',
       'gatsby-plugin-favicon',
       'gatsby-plugin-react-helmet',
       'gatsby-plugin-sass',
