@@ -2,7 +2,7 @@ import React, { PureComponent } from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import Lightbox from 'react-image-lightbox'
-import Img from "gatsby-image"
+import Img from 'gatsby-image'
 
 import colors from '../constants/colors'
 
@@ -60,7 +60,9 @@ export default class Project extends PureComponent {
                <div className="section padded">
                   {data.gallery.map((el, i) => (
                      <React.Fragment key={el.image.publicURL}>
-                        <StyledImg onClick={() => this.setState({ isOpen: true, photoIndex: i })} fluid={el.image.childImageSharp.fluid} />
+                        <div onClick={() => this.setState({ isOpen: true, photoIndex: i })}>
+                           <StyledImg fluid={el.image.childImageSharp.fluid} />
+                        </div>
                         <div className="row xs-center section padded no-pad-top">
                            <div className="col xs12 l6">
                               <MDP>{el.label}</MDP>
@@ -74,7 +76,6 @@ export default class Project extends PureComponent {
       )
    }
 }
-
 
 const StyledCard = styled(Card)`
    padding: 0;
