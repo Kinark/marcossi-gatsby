@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react'
+import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import Lightbox from 'react-image-lightbox'
 import { graphql } from 'gatsby'
@@ -23,6 +24,10 @@ export default class ProjectPage extends PureComponent {
       console.log(frontmatter)
       return (
          <Layout>
+            <Helmet>
+               <title>{frontmatter.title}</title>
+               <meta name="description" content={frontmatter.excerpt} />
+            </Helmet>
             {isOpen && (
                <Lightbox
                   mainSrc={images[photoIndex]}
