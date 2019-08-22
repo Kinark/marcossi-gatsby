@@ -46,7 +46,7 @@ const GlobalStyle = createGlobalStyle`
    font-size: 16px;
    background-color: ${colors.BG};
    background-image: url(${({ bgImg }) => bgImg});
-   background-position: 56% 550px;
+   background-position: 56% 440px;
    background-repeat: no-repeat;
   }
   *:focus {
