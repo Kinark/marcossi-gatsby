@@ -10,6 +10,7 @@ const Card = styled.div`
    box-shadow: 0px 10px 15px 0px ${colors.SHADOW};
    transition: box-shadow 250ms ease-out;
    position: relative;
+   overflow: hidden;
    &:hover {
       box-shadow: 0px 15px 20px 0px ${colors.SHADOW};
    }
