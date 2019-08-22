@@ -15,7 +15,8 @@ export default class ChangeLocaleBtns extends PureComponent {
    render() {
       const { i18n } = this.props
       const { open } = this.state
-      const anotherLanguageLink = i18n === 'en' ? window.location.pathname.substring(3) : `/en/${window.location.pathname}`
+      const pathname = typeof window !== `undefined` ? window.location.pathname : 'Z'
+      const anotherLanguageLink = i18n === 'en' ? pathname.substring(3) : `/en/${pathname}`
       return (
          <Wrapper onClick={this.openOptions} onMouseLeave={this.closeOptions}>
             <HiddenPill onClick={this.closeOptions} to={anotherLanguageLink} className={open ? 'active' : ''}>

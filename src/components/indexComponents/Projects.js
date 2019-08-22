@@ -11,7 +11,8 @@ import { ButtonLink, ButtonAnchor } from '../Button'
 
 const Projects = props => {
    const { data, projects } = props
-   const currentPath = window.location.pathname === '/' ? '' : window.location.pathname
+   const pathname = typeof window !== `undefined` ? window.location.pathname : ''
+   const currentPath = pathname === '/' ? '' : pathname
    return (
       <section className="section padded" id="projects">
          <div className="container">
