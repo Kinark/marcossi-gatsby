@@ -167,19 +167,12 @@ collections:
                            label: Testimonials,
                            name: testimonials,
                            widget: 'list',
-                           field:
-                              {
-                                 label: Testimonial,
-                                 name: testimonial,
-                                 widget: object,
-                                 fields:
-                                    [
-                                       { label: Photo, name: photo, widget: image },
-                                       { label: Name, name: name, widget: string },
-                                       { label: Position, name: position, widget: string },
-                                       { label: Saying, name: saying, widget: text },
-                                    ],
-                              },
+                           fields: [
+                               { label: Photo, name: photo, widget: image },
+                               { label: Name, name: name, widget: string },
+                               { label: Position, name: position, widget: string },
+                               { label: Saying, name: saying, widget: text }
+                               ]
                         },
                      ],
                }
