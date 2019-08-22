@@ -17,6 +17,7 @@ exports.createPages = ({ actions, graphql }) => {
                   }
                   frontmatter {
                      templateKey
+                     templateKeyEn
                   }
                }
             }
@@ -42,7 +43,7 @@ exports.createPages = ({ actions, graphql }) => {
          })
          if (edge.node.frontmatter.templateKeyEn) {
             createPage({
-               path: `en/${edge.node.fields.slug}`,
+               path: `/en${edge.node.fields.slug}`,
                component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKeyEn)}.js`),
                // additional data can be passed via context
                context: {
