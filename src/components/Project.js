@@ -60,7 +60,6 @@ export default class Project extends PureComponent {
                <div className="section padded">
                   {data.gallery.map((el, i) => (
                      <React.Fragment key={el.image.publicURL}>
-                        {/* <StyledImg onClick={() => this.setState({ isOpen: true, photoIndex: i })} src={el.image.publicURL} alt="" /> */}
                         <StyledImg onClick={() => this.setState({ isOpen: true, photoIndex: i })} fluid={el.image.childImageSharp.fluid} />
                         <div className="row xs-center section padded no-pad-top">
                            <div className="col xs12 l6">
