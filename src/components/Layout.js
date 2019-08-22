@@ -8,6 +8,7 @@ import colors from '../constants/colors'
 import './styles.scss'
 import useSiteMetadata from './SiteMetadata'
 import Navbar from './Navbar'
+import ChangeLocaleBtns from './ChangeLocaleBtns'
 
 const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
    const { title, description, titleEn, descriptionEn } = useSiteMetadata()
@@ -27,6 +28,7 @@ const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
          <div id="outer-container">
             <Navbar i18n={i18n} logo={logo} />
             <Main id="page-wrap">{children}</Main>
+            <ChangeLocaleBtns i18n={i18n} />
          </div>
          <GlobalStyle bgImg={bgImg.publicURL} />
       </React.Fragment>
