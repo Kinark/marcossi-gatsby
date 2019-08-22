@@ -10,18 +10,13 @@ import MDP from '../MDP'
 import { ButtonLink, ButtonAnchor } from '../Button'
 
 const Projects = () => {
-   const { markdownRemark: markdownRemark2 } = useStaticQuery(graphql`
-      query ProjectsQuery2 {
+   const { allMarkdownRemark, markdownRemark } = useStaticQuery(graphql`
+      query ProjectsQuery {
          markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
             frontmatter {
                projectsTitle
             }
          }
-      }
-   `)
-
-   const { allMarkdownRemark } = useStaticQuery(graphql`
-      query ProjectsQuery {
          allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "project-page" } } }) {
             edges {
                node {
@@ -41,12 +36,13 @@ const Projects = () => {
          }
       }
    `)
+   const { frontmatter } = markdownRemark
    const { edges } = allMarkdownRemark
    return (
       <section className="section padded" id="projects">
          <div className="container">
             <div className="section center no-pad-top">
-               <Title>{markdownRemark2.frontmatter.projectsTitle}</Title>
+               <Title>{frontmatter.projectsTitle}</Title>
             </div>
             {edges.map(({ node }) => (
                <StyledCard key={node.frontmatter.title}>
