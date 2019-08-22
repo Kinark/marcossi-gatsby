@@ -1,13 +1,14 @@
 ---
-templateKey: index-page.en
+templateKey: index-page
 logo: /img/Logo.svg
 backgroundImage: /img/bg-img.svg
 introduction:
   description: >-
     Trabalhamos com gente do mundo todo. Tenho certeza que vamos encontrar
     exatamente o que você precisa!
+  image: /img/remote-team.svg
   name: Marcossi Design
-  subtitle: 'Trabalhando por você, não importa onde esteja.'
+  subtitle: 'Trabalhando por <span>você</span>, não importa onde esteja.'
 whatWeDo:
   feature1:
     description: >-
@@ -38,7 +39,7 @@ values:
   value2:
     description: >-
       Utilizaremos sempre as últimas tecnologias para construir exatamente
-      aquilo que você está precisando, e não cobraremos mais do que o justo.
+      aquilo que você está precisando, e não cobraremos mais do que o justo.  
 
 
       Por exemplo, você sabia que a maioria dos nossos clientes não pagam
