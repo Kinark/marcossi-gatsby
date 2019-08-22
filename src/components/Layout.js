@@ -1,17 +1,18 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 import { withPrefix, graphql, useStaticQuery } from 'gatsby'
 
 import colors from '../constants/colors'
 
 import './styles.scss'
 import useSiteMetadata from './SiteMetadata'
+import Navbar from './Navbar'
 
 const TemplateWrapper = ({ children }) => {
    const { markdownRemark } = useStaticQuery(graphql`
       query LayoutQuery {
-         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+         markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
             frontmatter {
                backgroundImage {
                   publicURL
@@ -40,12 +41,19 @@ const TemplateWrapper = ({ children }) => {
             <meta property="og:url" content="/" />
             <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
          </Helmet>
-         {/* <Navbar /> */}
-         <React.Fragment>{children}</React.Fragment>
+         <div id="outer-container">
+            <Navbar />
+            <Main id="page-wrap">{children}</Main>
+            <div className="screen-detector"></div>
+         </div>
          <GlobalStyle bgImg={markdownRemark.frontmatter.backgroundImage.publicURL} />
       </React.Fragment>
    )
 }
+
+const Main = styled.main`
+   padding-top: 5rem;
+`
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -60,6 +68,11 @@ const GlobalStyle = createGlobalStyle`
   *:focus {
      outline: none;
   }
+  .bm-burger-button {
+      @media (min-width: 768px) {
+         display: none;
+      }
+   }
 `
 
 export default TemplateWrapper
