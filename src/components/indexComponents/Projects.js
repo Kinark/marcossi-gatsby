@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Img from 'gatsby-image'
 
 import colors from '../../constants/colors'
 
@@ -20,7 +21,7 @@ const Projects = props => {
             {projects.map(({ node }) => (
                <StyledCard key={node.frontmatter.title}>
                   <CardImg>
-                     <img src={node.frontmatter.featuredimage.publicURL} alt="" />
+                     <StyledImg fluid={node.frontmatter.featuredimage.childImageSharp.fluid} />
                   </CardImg>
                   <CardContent>
                      <Title>{node.frontmatter.title}</Title>
@@ -58,19 +59,20 @@ const CardImg = styled.div`
    @media (max-width: 767px) {
       height: 260px;
    }
-   img {
-      position: absolute;
-      object-fit: cover;
-      height: 100%;
-      top: 0px;
-      right: 0px;
-      width: 100%;
-      @media (max-width: 767px) {
-         width: 100%;
-         bottom: 0px;
-         left: 0px;
-         margin: auto;
-      }
+`
+
+const StyledImg = styled(Img)`
+   position: absolute !important;
+   object-fit: cover !important;
+   height: 100% !important;
+   top: 0px !important;
+   right: 0px !important;
+   width: 100% !important;
+   @media (max-width: 767px) {
+      width: 100% !important;
+      bottom: 0px !important;
+      left: 0px !important;
+      margin: auto !important;
    }
 `
 

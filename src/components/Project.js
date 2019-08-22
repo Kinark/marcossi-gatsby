@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react'
 import { Helmet } from 'react-helmet'
 import styled from 'styled-components'
 import Lightbox from 'react-image-lightbox'
+import Img from "gatsby-image"
 
 import colors from '../constants/colors'
 
@@ -47,7 +48,7 @@ export default class Project extends PureComponent {
                <div className="row xs-middle">
                   <div className="col xs12 l6">
                      <StyledCard>
-                        <img src={data.featuredimage.publicURL} alt="" />
+                        <Img fluid={data.featuredimage.childImageSharp.fluid} />
                      </StyledCard>
                   </div>
                   <div className="col xs12 l6">
@@ -59,7 +60,8 @@ export default class Project extends PureComponent {
                <div className="section padded">
                   {data.gallery.map((el, i) => (
                      <React.Fragment key={el.image.publicURL}>
-                        <StyledImg onClick={() => this.setState({ isOpen: true, photoIndex: i })} src={el.image.publicURL} alt="" />
+                        {/* <StyledImg onClick={() => this.setState({ isOpen: true, photoIndex: i })} src={el.image.publicURL} alt="" /> */}
+                        <StyledImg onClick={() => this.setState({ isOpen: true, photoIndex: i })} fluid={el.image.childImageSharp.fluid} />
                         <div className="row xs-center section padded no-pad-top">
                            <div className="col xs12 l6">
                               <MDP>{el.label}</MDP>
@@ -85,9 +87,9 @@ const StyledCard = styled(Card)`
    }
 `
 
-const StyledImg = styled.img`
+const StyledImg = styled(Img)`
    border-radius: 20px;
-   width: 100%;
+   /* width: 100%; */
    cursor: pointer;
    transition: filter 250ms;
    &:hover {

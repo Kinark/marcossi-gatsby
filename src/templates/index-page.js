@@ -33,22 +33,27 @@ export default class IndexPageTemplate extends PureComponent {
 export const pageQuery = graphql`
    query IndexQueryDefault($id: String!) {
       allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "project-page" } } }) {
-            edges {
-               node {
-                  frontmatter {
-                     featuredimage {
-                        publicURL
+         edges {
+            node {
+               frontmatter {
+                  featuredimage {
+                     childImageSharp {
+                        fluid(maxWidth: 1080, quality: 75) {
+                           ...GatsbyImageSharpFluid
+                        }
                      }
-                     title
-                     excerpt
-                     externalLink
+                     publicURL
                   }
-                  fields {
-                     slug
-                  }
+                  title
+                  excerpt
+                  externalLink
+               }
+               fields {
+                  slug
                }
             }
          }
+      }
 
       markdownRemark(id: { eq: $id }) {
          frontmatter {

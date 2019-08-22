@@ -37,11 +37,21 @@ export const pageQuery = graphql`
             description
             date(formatString: "MMMM DD, YYYY")
             featuredimage {
+               childImageSharp {
+                  fluid(maxWidth: 640, quality: 75) {
+                     ...GatsbyImageSharpFluid
+                  }
+               }
                publicURL
             }
             externalLink
             gallery {
                image {
+                  childImageSharp {
+                     fluid(maxWidth: 1280, quality: 75) {
+                        ...GatsbyImageSharpFluid
+                     }
+                  }
                   publicURL
                }
                label

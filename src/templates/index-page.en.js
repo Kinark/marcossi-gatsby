@@ -37,6 +37,11 @@ export const pageQuery = graphql`
             node {
                frontmatter {
                   featuredimage {
+                     childImageSharp {
+                        fluid(maxWidth: 1080, quality: 75) {
+                           ...GatsbyImageSharpFluid
+                        }
+                     }
                      publicURL
                   }
                   title: titleEn
