@@ -3,14 +3,14 @@ import Layout from '../components/Layout'
 import { graphql } from 'gatsby'
 import styled from 'styled-components'
 import notFound from '../img/notFound.png'
-import SubTitle from '../components/SubTitle'
+import Subtitle from '../components/Subtitle'
 
 const NotFoundPage = ({ data }) => (
    <Layout bgImg={data.markdownRemark.frontmatter.backgroundImage} logo={data.markdownRemark.frontmatter.logo}>
       <Wrapper className="container">
          <img width="250" src={notFound} alt="" />
-         <SubTitle>Page <span>not</span> found!</SubTitle>
-         <SubTitle>Página <span>não</span> encontrada!</SubTitle>
+         <Subtitle>Page <span>not</span> found!</Subtitle>
+         <Subtitle>Página <span>não</span> encontrada!</Subtitle>
       </Wrapper>
    </Layout>
 )
