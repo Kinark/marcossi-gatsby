@@ -33,11 +33,11 @@ collections:
 
    - name: 'pages'
      label: 'Pages'
+     delete: false
      files:
         - file: 'src/pages/index.md'
           label: 'Landing Page'
           name: 'index'
-          delete: false
           fields:
              - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
              - { label: 'Template Key En', name: 'templateKeyEn', widget: 'hidden', default: '' }
@@ -238,7 +238,6 @@ collections:
         - file: 'src/pages/index.en.md'
           label: 'Landing Page EN'
           name: 'indexEn'
-          delete: false
           fields:
              - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page.en' }
              - { label: 'Template Key En', name: 'templateKeyEn', widget: 'hidden', default: '' }
