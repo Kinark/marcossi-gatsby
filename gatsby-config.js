@@ -8,6 +8,18 @@ module.exports = {
       descriptionEn: 'Marcossi Design is a branding and an apps, sites and systems development company. We do what we love!'
    },
    plugins: [
+      {
+         resolve: `gatsby-plugin-manifest`,
+         options: {
+            icon: `src/favicon.png`,
+            name: `Marcossi Design`,
+            short_name: `Marcossi Design`,
+            start_url: `/`,
+            background_color: `#FBFCFF`,
+            theme_color: `#FBFCFF`,
+            display: `standalone`
+         }
+      },
       'gatsby-plugin-offline',
       'gatsby-plugin-favicon',
       'gatsby-plugin-react-helmet',
