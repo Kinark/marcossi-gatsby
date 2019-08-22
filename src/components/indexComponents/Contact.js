@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
 import styled, { css } from 'styled-components'
 import Swal from 'sweetalert2'
 
@@ -12,29 +11,11 @@ import ResponsiveImg from '../ResponsiveImg'
 import { Button } from '../Button'
 import { Input, Textarea } from '../Inputs'
 
-const About = () => {
+const About = props => {
    const { value: valueName, bind: bindName, reset: resetName } = useInput('')
    const { value: valueEmail, bind: bindEmail, reset: resetEmail } = useInput('')
    const { value: valueMessage, bind: bindMessage, reset: resetMessage } = useInput('')
    const [loading, setLoading] = useState(false)
-
-   const { markdownRemark } = useStaticQuery(graphql`
-      query ContactQuery {
-         markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
-            frontmatter {
-               contact {
-                  image {
-                     publicURL
-                  }
-                  title
-                  nameLabel
-                  emailLabel
-                  messageLabel
-               }
-            }
-         }
-      }
-   `)
 
    const handleSubmit = e => {
       e.preventDefault()
@@ -67,22 +48,21 @@ const About = () => {
          })
    }
 
-   const { frontmatter } = markdownRemark
-   const { contact } = frontmatter
+   const { data } = props
    return (
       <section className="section padded" id="contact">
          <div className="container">
             <div className="section">
                <div className="row xs-center section padded no-pad-top">
                   <div className="col xs12 l6 center">
-                     <ResponsiveImg inline maxWidth="545" src={contact.image.publicURL} alt="" />
-                     <Subtitle dangerouslySetInnerHTML={{ __html: contact.title }} />
+                     <ResponsiveImg inline maxWidth="545" src={data.image.publicURL} alt="" />
+                     <Subtitle dangerouslySetInnerHTML={{ __html: data.title }} />
                      <FormWrapper loading={loading ? 1 : 0}>
                         <form onSubmit={handleSubmit} action="/" className="section">
                            <input type="hidden" name="form-name" value="contact" />
-                           <Input type="text" placeholder={contact.nameLabel} required {...bindName} />
-                           <Input type="email" placeholder={contact.emailLabel} required {...bindEmail} />
-                           <Textarea placeholder={contact.messageLabel} required {...bindMessage} />
+                           <Input type="text" placeholder={data.nameLabel} required {...bindName} />
+                           <Input type="email" placeholder={data.emailLabel} required {...bindEmail} />
+                           <Textarea placeholder={data.messageLabel} required {...bindMessage} />
                            <div className="right-align">
                               <Button type="submit">Enviar</Button>
                            </div>

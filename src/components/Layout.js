@@ -1,7 +1,7 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import styled, { createGlobalStyle } from 'styled-components'
-import { withPrefix, graphql, useStaticQuery } from 'gatsby'
+import { withPrefix } from 'gatsby'
 
 import colors from '../constants/colors'
 
@@ -9,25 +9,14 @@ import './styles.scss'
 import useSiteMetadata from './SiteMetadata'
 import Navbar from './Navbar'
 
-const TemplateWrapper = ({ children }) => {
-   const { markdownRemark } = useStaticQuery(graphql`
-      query LayoutQuery {
-         markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-            frontmatter {
-               backgroundImage {
-                  publicURL
-               }
-            }
-         }
-      }
-   `)
-   const { title, description } = useSiteMetadata()
+const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
+   const { title, description, titleEn, descriptionEn } = useSiteMetadata()
    return (
       <React.Fragment>
          <Helmet>
             <html lang="en" />
-            <title>{title}</title>
-            <meta name="description" content={description} />
+            <title>{i18n === 'en' ? titleEn : title }</title>
+            <meta name="description" content={i18n === 'en' ? descriptionEn : description } />
             <meta name="theme-color" content={colors.BG} />
 
             <meta property="og:type" content="business.business" />
@@ -36,11 +25,11 @@ const TemplateWrapper = ({ children }) => {
             <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
          </Helmet>
          <div id="outer-container">
-            <Navbar />
+            <Navbar i18n={i18n} logo={logo} />
             <Main id="page-wrap">{children}</Main>
             <div className="screen-detector"></div>
          </div>
-         <GlobalStyle bgImg={markdownRemark.frontmatter.backgroundImage.publicURL} />
+         <GlobalStyle bgImg={bgImg.publicURL} />
       </React.Fragment>
    )
 }

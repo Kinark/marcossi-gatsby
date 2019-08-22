@@ -3,7 +3,9 @@ var proxy = require('http-proxy-middleware')
 module.exports = {
    siteMetadata: {
       title: 'Marcossi Design',
-      description: 'Marcossi Design é uma empresa de branding e desenvolvimento de aplicativos, sites e sistemas. Fazemos o que amamos!'
+      titleEn: 'Marcossi Design',
+      description: 'Marcossi Design é uma empresa de branding e desenvolvimento de aplicativos, sites e sistemas. Fazemos o que amamos!',
+      descriptionEn: 'Marcossi Design is a branding and an apps, sites and systems development company. We do what we love!'
    },
    plugins: [
       'gatsby-plugin-offline',

@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { graphql, useStaticQuery } from 'gatsby'
 
 import colors from '../../constants/colors'
 
@@ -9,42 +8,16 @@ import Title from '../Title'
 import MDP from '../MDP'
 import { ButtonLink, ButtonAnchor } from '../Button'
 
-const Projects = () => {
-   const { allMarkdownRemark, markdownRemark } = useStaticQuery(graphql`
-      query ProjectsQuery {
-         markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-            frontmatter {
-               projectsTitle
-            }
-         }
-         allMarkdownRemark(filter: { frontmatter: { templateKey: { eq: "project-page" } } }) {
-            edges {
-               node {
-                  frontmatter {
-                     featuredimage {
-                        publicURL
-                     }
-                     title
-                     excerpt
-                     externalLink
-                  }
-                  fields {
-                     slug
-                  }
-               }
-            }
-         }
-      }
-   `)
-   const { frontmatter } = markdownRemark
-   const { edges } = allMarkdownRemark
+const Projects = props => {
+   const { data, projects } = props
+   const currentPath = window.location.pathname === '/' ? '' : window.location.pathname
    return (
       <section className="section padded" id="projects">
          <div className="container">
             <div className="section center no-pad-top">
-               <Title>{frontmatter.projectsTitle}</Title>
+               <Title>{data}</Title>
             </div>
-            {edges.map(({ node }) => (
+            {projects.map(({ node }) => (
                <StyledCard key={node.frontmatter.title}>
                   <CardImg>
                      <img src={node.frontmatter.featuredimage.publicURL} alt="" />
@@ -52,7 +25,7 @@ const Projects = () => {
                   <CardContent>
                      <Title>{node.frontmatter.title}</Title>
                      <Excerpt>{node.frontmatter.excerpt}</Excerpt>
-                     <ButtonLink to={node.fields.slug}>Saiba mais</ButtonLink>
+                     <ButtonLink to={currentPath + node.fields.slug}>Saiba mais</ButtonLink>
                      {!!node.frontmatter.externalLink && <ButtonAnchor to={node.frontmatter.externalLink}>Visite o site</ButtonAnchor>}
                   </CardContent>
                </StyledCard>

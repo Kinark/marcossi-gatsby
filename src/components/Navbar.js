@@ -1,49 +1,37 @@
 import React, { useState } from 'react'
 import { elastic as Menu } from 'react-burger-menu'
-import { graphql, useStaticQuery } from 'gatsby'
 import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import colors from '../constants/colors'
 
-const Navbar = () => {
-   const [isMenuOpen, setMenuOpen] = useState(false)
 
-   const { markdownRemark } = useStaticQuery(graphql`
-      query NavbarQuery {
-         markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
-            frontmatter {
-               logo {
-                  publicURL
-               }
-            }
-         }
-      }
-   `)
-   const { frontmatter } = markdownRemark
+
+const Navbar = ({ logo, i18n }) => {
+   const [isMenuOpen, setMenuOpen] = useState(false)
    return (
       <React.Fragment>
          <Nav>
             <div className="container">
                <Link to="/#">
-                  <img src={frontmatter.logo.publicURL} width="65" alt="" />
+                  <img src={logo.publicURL} width="65" alt="" />
                </Link>
                <ul className="hide-on-small-and-down">
                   <li>
-                     <Link to="/#home">Início</Link>
+                     <Link to="/#home">{i18n === 'en' ? 'Home' : 'Início'}</Link>
                   </li>
                   <li>
-                     <Link to="/#projects">Projetos</Link>
+                     <Link to="/#projects">{i18n === 'en' ? 'Projects' : 'Projetos'}</Link>
                   </li>
                   <li>
-                     <Link to="/#findus">Nos encontre</Link>
+                     <Link to="/#findus">{i18n === 'en' ? 'Find us' : 'Nos encontre'}</Link>
                   </li>
                   {/* <li><Link>Depoimentos</Link></li> */}
                   <li>
-                     <Link to="/#about">Sobre</Link>
+                     <Link to="/#about">{i18n === 'en' ? 'About' : 'Sobre'}</Link>
                   </li>
                   <li>
-                     <Link to="/#contact">Contato</Link>
+                     <Link to="/#contact">{i18n === 'en' ? 'Contact' : 'Contato'}</Link>
                   </li>
                </ul>
             </div>
@@ -56,11 +44,21 @@ const Navbar = () => {
             pageWrapId="page-wrap"
             outerContainerId="outer-container"
          >
-            <Link onClick={() => setMenuOpen(false)} to="/#home">Início</Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#projects">Projetos</Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#findus">Nos encontre</Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#about">Sobre</Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#contact">Contato</Link>
+            <Link onClick={() => setMenuOpen(false)} to="/#home">
+               {i18n === 'en' ? 'Home' : 'Início'}
+            </Link>
+            <Link onClick={() => setMenuOpen(false)} to="/#projects">
+               {i18n === 'en' ? 'Projects' : 'Projetos'}
+            </Link>
+            <Link onClick={() => setMenuOpen(false)} to="/#findus">
+               {i18n === 'en' ? 'Find us' : 'Nos encontre'}
+            </Link>
+            <Link onClick={() => setMenuOpen(false)} to="/#about">
+               {i18n === 'en' ? 'About' : 'Sobre'}
+            </Link>
+            <Link onClick={() => setMenuOpen(false)} to="/#contact">
+               {i18n === 'en' ? 'Contact' : 'Contato'}
+            </Link>
          </Menu>
       </React.Fragment>
    )
