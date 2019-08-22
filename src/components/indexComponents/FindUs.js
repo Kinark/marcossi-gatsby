@@ -30,7 +30,7 @@ const FindUs = () => {
    const { frontmatter } = markdownRemark
    const { whereWeAre } = frontmatter
    return (
-      <section className="section padded">
+      <section className="section padded" id="findus">
          <div className="container">
             <div className="row xs-middle">
                <div className="col xs12 l6">

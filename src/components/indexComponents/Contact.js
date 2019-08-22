@@ -70,7 +70,7 @@ const About = () => {
    const { frontmatter } = markdownRemark
    const { contact } = frontmatter
    return (
-      <section className="section padded">
+      <section className="section padded" id="contact">
          <div className="container">
             <div className="section">
                <div className="row xs-center section padded no-pad-top">

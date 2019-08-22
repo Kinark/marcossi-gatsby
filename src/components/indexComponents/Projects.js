@@ -33,7 +33,7 @@ const Projects = () => {
    `)
    const { edges } = allMarkdownRemark
    return (
-      <section className="section padded">
+      <section className="section padded" id="projects">
          <div className="container">
             {edges.map(({ node }) => (
                <StyledCard key={node.frontmatter.title}>

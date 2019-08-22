@@ -30,7 +30,7 @@ const Introduction = () => {
    const { frontmatter } = markdownRemark
    return (
       <Section>
-         <div className="container">
+         <div className="container" id="home">
             <div className="row xs-middle">
                <div className="col xs12 l5">
                   <ResponsiveImg inline maxWidth="158" src={frontmatter.logo.publicURL} alt="" />

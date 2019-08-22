@@ -48,7 +48,7 @@ const About = () => {
    const { frontmatter } = markdownRemark
    const { about } = frontmatter
    return (
-      <section className="section padded">
+      <section className="section padded" id="about">
          <div className="container">
             <div className="center">
                <Title>{about.sectionTitle}</Title>
