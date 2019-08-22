@@ -27,7 +27,6 @@ const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
          <div id="outer-container">
             <Navbar i18n={i18n} logo={logo} />
             <Main id="page-wrap">{children}</Main>
-            <div className="screen-detector"></div>
          </div>
          <GlobalStyle bgImg={bgImg.publicURL} />
       </React.Fragment>
