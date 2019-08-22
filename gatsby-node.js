@@ -31,10 +31,20 @@ exports.createPages = ({ actions, graphql }) => {
 
       const posts = result.data.allMarkdownRemark.edges
 
+      const i18nSlugToPathTranslator = slug => {
+         if (slug === '/' || slug === '/index/') return '/'
+         const transformedSlug = slug.slice(1, -1)
+         const slugSplitted = transformedSlug.split('.')
+         const indexOfWordIndex = slugSplitted.indexOf('index')
+         if (indexOfWordIndex !== -1) slugSplitted.splice(indexOfWordIndex, 1)
+         if (slugSplitted.length === 1) return `/${slugSplitted[0]}/`
+         return `/${slugSplitted.pop()}/${slugSplitted.join('.')}/`
+      }
+
       posts.forEach(edge => {
          const id = edge.node.id
          createPage({
-            path: edge.node.fields.slug,
+            path: i18nSlugToPathTranslator(edge.node.fields.slug),
             component: path.resolve(`src/templates/${String(edge.node.frontmatter.templateKey)}.js`),
             // additional data can be passed via context
             context: {
