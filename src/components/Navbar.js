@@ -70,7 +70,7 @@ const Nav = styled.nav`
    left: 0;
    width: 100%;
    background-color: rgba(251, 252, 255, 0.75);
-   z-index: 1;
+   z-index: 2;
    padding: 0.75rem 0;
    .container {
       display: flex;

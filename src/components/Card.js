@@ -22,6 +22,7 @@ const Card = styled.div`
       border-radius: 50%;
       background-color: ${colors.TITLE};
       top: 35px;
+      z-index: 1;
    }
    &::before {
       left: 35px;
