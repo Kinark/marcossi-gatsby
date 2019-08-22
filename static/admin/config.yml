@@ -39,6 +39,7 @@ collections:
           name: 'index'
           fields:
              - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
+             - { label: 'Template Key En', name: 'templateKeyEn', widget: 'hidden', default: '' }
              - { label: Logo, name: logo, widget: image }
              - { label: 'Background image', name: 'backgroundImage', widget: image }
              - {
@@ -244,6 +245,7 @@ collections:
           name: 'indexEn'
           fields:
              - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page.en' }
+             - { label: 'Template Key En', name: 'templateKeyEn', widget: 'hidden', default: '' }
              - { label: Logo, name: logo, widget: image }
              - { label: 'Background image', name: 'backgroundImage', widget: image }
              - {

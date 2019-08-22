@@ -1,5 +1,6 @@
 ---
-templateKey: index-page
+templateKey: index-page.en
+templateKeyEn: ''
 logo: /img/Logo.svg
 backgroundImage: /img/bg-img.svg
 introduction:
