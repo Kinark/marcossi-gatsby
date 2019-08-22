@@ -32,9 +32,9 @@ export const pageQuery = graphql`
 
       markdownRemark(id: { eq: $id }) {
          frontmatter {
-            title
-            excerpt
-            description
+            title: titleEn
+            excerpt: excerptEn
+            description: descriptionEn
             date(formatString: "MMMM DD, YYYY")
             featuredimage {
                publicURL
