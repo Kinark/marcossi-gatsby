@@ -4,6 +4,7 @@ import { Link } from 'gatsby'
 import colors from '../constants/colors'
 
 const ButtonBase = css`
+   line-height: 1.25;
    text-align: center;
    background-color: ${colors.TITLE};
    color: ${colors.BG};
