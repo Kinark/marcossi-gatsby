@@ -9,29 +9,30 @@ import colors from '../constants/colors'
 
 const Navbar = ({ logo, i18n }) => {
    const [isMenuOpen, setMenuOpen] = useState(false)
+   const linksPrefix = i18n ? '/en' : ''
    return (
       <React.Fragment>
          <Nav>
             <div className="container">
-               <Link to="/#">
+               <Link to={`${linksPrefix}/#`}>
                   <img src={logo.publicURL} width="65" alt="" />
                </Link>
                <ul className="hide-on-small-and-down">
                   <li>
-                     <Link to="/#home">{i18n === 'en' ? 'Home' : 'Início'}</Link>
+                     <Link to={`${linksPrefix}/#home`}>{i18n === 'en' ? 'Home' : 'Início'}</Link>
                   </li>
                   <li>
-                     <Link to="/#projects">{i18n === 'en' ? 'Projects' : 'Projetos'}</Link>
+                     <Link to={`${linksPrefix}/#projects`}>{i18n === 'en' ? 'Projects' : 'Projetos'}</Link>
                   </li>
                   <li>
-                     <Link to="/#findus">{i18n === 'en' ? 'Find us' : 'Nos encontre'}</Link>
+                     <Link to={`${linksPrefix}/#findus`}>{i18n === 'en' ? 'Find us' : 'Nos encontre'}</Link>
                   </li>
                   {/* <li><Link>Depoimentos</Link></li> */}
                   <li>
-                     <Link to="/#about">{i18n === 'en' ? 'About' : 'Sobre'}</Link>
+                     <Link to={`${linksPrefix}/#about`}>{i18n === 'en' ? 'About' : 'Sobre'}</Link>
                   </li>
                   <li>
-                     <Link to="/#contact">{i18n === 'en' ? 'Contact' : 'Contato'}</Link>
+                     <Link to={`${linksPrefix}/#contact`}>{i18n === 'en' ? 'Contact' : 'Contato'}</Link>
                   </li>
                </ul>
             </div>
@@ -44,19 +45,19 @@ const Navbar = ({ logo, i18n }) => {
             pageWrapId="page-wrap"
             outerContainerId="outer-container"
          >
-            <Link onClick={() => setMenuOpen(false)} to="/#home">
+            <Link onClick={() => setMenuOpen(false)} to={`${linksPrefix}/#home`}>
                {i18n === 'en' ? 'Home' : 'Início'}
             </Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#projects">
+            <Link onClick={() => setMenuOpen(false)} to={`${linksPrefix}/#projects`}>
                {i18n === 'en' ? 'Projects' : 'Projetos'}
             </Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#findus">
+            <Link onClick={() => setMenuOpen(false)} to={`${linksPrefix}/#findus`}>
                {i18n === 'en' ? 'Find us' : 'Nos encontre'}
             </Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#about">
+            <Link onClick={() => setMenuOpen(false)} to={`${linksPrefix}/#about`}>
                {i18n === 'en' ? 'About' : 'Sobre'}
             </Link>
-            <Link onClick={() => setMenuOpen(false)} to="/#contact">
+            <Link onClick={() => setMenuOpen(false)} to={`${linksPrefix}/#contact`}>
                {i18n === 'en' ? 'Contact' : 'Contato'}
             </Link>
          </Menu>
