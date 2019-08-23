@@ -5,38 +5,36 @@ logo: /img/Logo.svg
 backgroundImage: /img/bg-img.svg
 introduction:
   description: >-
-    Trabalhamos com gente do mundo todo. Tenho certeza que vamos encontrar
-    exatamente o que você precisa!
+    We work with people from all around the world. I'm sure we'll find exactly
+    what you need!
   image: /img/remote-team.svg
   name: Marcossi Design
-  subtitle: 'Trabalhando por <span>você</span>, não importa onde esteja.'
+  subtitle: 'Working for <span>you</span>, no matter where you are.'
 whatWeDo:
   feature1:
     description: >-
-      Do que precisa? De um controle de estoque? De um site institucional? Vamos
-      fazer!
+      What do you need? A stock management? An institucional site? Let's build
+      it!
     image: /img/sitessystems.svg
-    title: Sites / Sistemas
+    title: Sites / Systems
   feature2:
     description: >-
-      Tudo o que você precisa para dar uma renovada na cara do seu projeto. Ou
-      construir uma do zero!
+      Everything you need to give your project a fresh new look. Or maybe build
+      one from scratch!
     image: /img/presentation.svg
     title: Branding
   feature3:
-    description: >-
-      Precisa de um aplicativo nativo para aparelhos móveis? A gente faz também,
-      relaxa!
+    description: 'Need a native app for mobile devices? We can do it too, relax!'
     image: /img/tablet.svg
     title: Apps
-  title: O que fazemos
+  title: What we do
 values:
   value1:
     description: >-
-      Nós somos, acima de tudo, uma empresa de tecnologia. Você pode pagar como
-      quiser: cartão de crédito, PayPal, Bitcoin, Ethereum, você decide!
+      We are, more than anything, a tech company. You can pay as you wish:
+      credit card, PayPal, Bitcoin, Ethereum, it's up to you!
     image: /img/cryptocurrency.svg
-    title: 'Acima de tudo, uma empresa de <span>tecnologia</span>.'
+    title: 'More than anything, we''re a <span>tech</span> company.'
   value2:
     description: >-
       Utilizaremos sempre as últimas tecnologias para construir exatamente
