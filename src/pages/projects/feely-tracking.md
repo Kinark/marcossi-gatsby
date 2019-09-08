@@ -4,10 +4,14 @@ templateKeyEn: project-page.en
 title: Feely Tracking
 titleEn: Feely Traking
 featuredpost: true
-excerpt: Uma empresa de rastreamento veicular.
-excerptEn: A vehicle tracking company.
-description: Desenvolvimento de design e website
-descriptionEn: Website's design and development.
+excerpt: |-
+  Uma empresa de rastreamento veicular.
+  Desenvolvimento de design e website
+excerptEn: |-
+  A vehicle tracking company.
+  Website's design and development.
+description: Lorem ipsum.
+descriptionEn: Lorem ipsum.
 date: 2019-09-08T16:24:49.857Z
 featuredimage: /img/96342_feelycombr_15_1920.jpg
 externalLink: feelytracking.marcossi.com.br
