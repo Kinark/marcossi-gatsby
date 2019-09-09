@@ -20,10 +20,14 @@ descriptionEn: >-
   Got some followers on GitHub after a while with some asking for the
   MaterializeCSS developers include it in the official framework.
 date: 2019-09-09T18:12:05.467Z
-featuredimage: /img/x512.png
+featuredimage: /img/96521_kinarkgithubiomateri_23_1920.jpg
 externalLink: 'https://kinark.github.io/Materialize-stepper/'
 gallery:
-  - image: /img/96521_kinarkgithubiomateri_23_1920.jpg
+  - image: /img/e3edtdw.png
+    label: ''
+  - image: /img/nhiodyr.png
+    label: ''
+  - image: /img/small_demo.gif
     label: ''
 ---
 
