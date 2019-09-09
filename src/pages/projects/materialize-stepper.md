@@ -27,7 +27,5 @@ gallery:
     label: ''
   - image: /img/nhiodyr.png
     label: ''
-  - image: /img/small_demo.gif
-    label: ''
 ---
 
