@@ -21,13 +21,9 @@ descriptionEn: >-
   MaterializeCSS developers include it in the official framework.
 date: 2019-09-09T18:12:05.467Z
 featuredimage: /img/x512.png
-externalLink: github.com/Kinark/Materialize-stepper
+externalLink: 'https://kinark.github.io/Materialize-stepper/'
 gallery:
   - image: /img/96521_kinarkgithubiomateri_23_1920.jpg
-    label: ''
-  - image: /img/small_demo.gif
-    label: ''
-  - image: /img/nhiodyr.png
     label: ''
 ---
 
