@@ -47,7 +47,7 @@ values:
     title: We know what we're doing and we'll be always <span>transparent</span>.
   value3:
     description: >-
-      We believe that everyone do what to do for love.
+      We believe that everyone does what they do for love.
 
 
       We love to do what we do and we're proud to deliver the best quality for
