@@ -10,8 +10,8 @@ excerpt: |-
 excerptEn: |-
   A vehicle tracking company.
   Website's design and development.
-description: Lorem ipsum.
-descriptionEn: Lorem ipsum.
+description: ' '
+descriptionEn: ' '
 date: 2019-09-08T16:24:49.857Z
 featuredimage: /img/96342_feelycombr_15_1920.jpg
 externalLink: feelytracking.marcossi.com.br
