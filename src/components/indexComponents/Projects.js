@@ -28,7 +28,7 @@ const Projects = props => {
                      <Title>{node.frontmatter.title}</Title>
                      <Excerpt>{node.frontmatter.excerpt}</Excerpt>
                      <ButtonLink to={currentPath + node.fields.slug}>Saiba mais</ButtonLink>
-                     {!!node.frontmatter.externalLink && <ButtonAnchor to={node.frontmatter.externalLink}>Visite o site</ButtonAnchor>}
+                     {!!node.frontmatter.externalLink && <ButtonAnchor href={node.frontmatter.externalLink}>Visite o site</ButtonAnchor>}
                   </CardContent>
                </StyledCard>
             ))}
