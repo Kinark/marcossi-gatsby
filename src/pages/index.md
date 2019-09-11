@@ -96,7 +96,7 @@ about:
   section1:
     description: >-
       Desde pequenos fomos criados com computadores aos nossos arredores. Não só
-      computadores, alguns de nós foi criado foi com tablets e smarphones
+      computadores, alguns de nós foi criado foi com tablets e smartphones
       também.
 
 
