@@ -10,8 +10,8 @@ excerpt: |-
 excerptEn: |-
   Uma empresesa de branding e desenvolvimento web.
   Desenvolvimento de design.
-description: Lorem ipsum.
-descriptionEn: Lorem ipsum.
+description: Uma agência de branding e design.
+descriptionEn: A design and branding company.
 date: 2019-09-09T19:34:21.691Z
 featuredimage: /img/1.jpg
 externalLink: ''
