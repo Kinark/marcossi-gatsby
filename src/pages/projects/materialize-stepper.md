@@ -4,8 +4,8 @@ templateKeyEn: project-page.en
 title: Materialize Stepper
 titleEn: Materialize Stepper
 featuredpost: true
-excerpt: Um pequeno plugin front-end feito em jQuery.
-excerptEn: A small jQuery plugin.
+excerpt: Um não tão pequeno plugin feito em vanilla JS.
+excerptEn: A not-so-small plugin written in vanilla JS.
 description: >-
   Um pequeno projeto que surgiu depois de ter constatado a ausência de um
   "stepper" (ou passo-a-passo) no framework front-end Materializecss.
