@@ -4,7 +4,6 @@ import { Link } from 'gatsby'
 import colors from '../constants/colors'
 
 const ButtonBase = css`
-   maring-right: 1rem;
    line-height: 1.25;
    text-align: center;
    background-color: ${colors.TITLE};
@@ -12,7 +11,7 @@ const ButtonBase = css`
    border-radius: 100px;
    padding: calc(0.75rem - 3px) 2rem 0.75rem;
    display: inline-block;
-   margin: 1rem 0;
+   margin: 1rem 1rem 1rem 0;
    box-shadow: 0px 10px 15px 0px ${colors.SHADOW};
    transition: color 250ms ease-out, background-color 250ms ease-out, box-shadow 250ms ease-out;
    cursor: pointer;
