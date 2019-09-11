@@ -9,6 +9,7 @@ import colors from '../constants/colors'
 import Card from './Card'
 import Title from './Title'
 import MDP from './MDP'
+import { ButtonAnchor } from '../Button'
 
 export default class Project extends PureComponent {
    state = {
@@ -55,6 +56,7 @@ export default class Project extends PureComponent {
                      <Title>{data.title}</Title>
                      <Excerpt>{data.excerpt}</Excerpt>
                      <MDP>{data.description}</MDP>
+                     {!!data.externalLink && <ButtonAnchor href={data.externalLink}>Visite o site</ButtonAnchor>}
                   </div>
                </div>
                <div className="section padded">
