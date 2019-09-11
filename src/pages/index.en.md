@@ -37,38 +37,36 @@ values:
     title: 'More than anything, we''re a <span>tech</span> company.'
   value2:
     description: >-
-      Utilizaremos sempre as últimas tecnologias para construir exatamente
-      aquilo que você está precisando, e não cobraremos mais do que o justo.  
+      We'll always choose the latest technologies to build exactly what you're
+      looking for, and we'll never charge more than what's fair.
 
 
-      Por exemplo, você sabia que a maioria dos nossos clientes não pagam
-      hospedagem por seus sites?
+      For example, did you know that the majority of our clients doesn't pay for
+      it's website hosting?
     image: /img/support-team.svg
-    title: Sabemos o que estamos fazendo e seremos sempre <span>transparentes</span>.
+    title: We know what we're doing and we'll be always <span>transparent</span>.
   value3:
     description: >-
-      Acreditamos que cada pessoa possui amor pelo que faz.
+      We believe that everyone do what to do for love.
 
 
-      Amamos fazer  o que fazemos e prezamos sempre pela maior qualidade e menor
-      preço possível, para tornar a tecnologia e o avanço disponível para o
-      maior número de pessoas!
+      We love to do what we do and we're proud to deliver the best quality for
+      the lowest price possible, all to make the technology and the advance
+      available for many people as possible.
     image: /img/dog.svg
-    title: Isso tudo porque acreditamos em <span>seres humanos</span> como um todo
-projectsTitle: Um pouco do nosso trabalho
+    title: That's because we believe in <span>human beings</span> as they are.
+projectsTitle: A little of our job
 whereWeAre:
-  addressLabel: Cá estamos
+  addressLabel: Here we are
   addressLine1: 'Brazil - CEP: 12947-200'
   addressLine2: 'Atibaia, Alameda Lorena - SP - Nº65'
   coords: '-23.1450669,-46.5675731'
   description: >-
-    Prefere bater um papo pessoalmente? Claro, estamos à disposição! Vem cá
-    tomar um cafezinho com a gente!
+    Do you prefer to talk personally? Of course, we're here! Come take coffee
+    with us!
   image: /img/around-the-world.svg
   map: '{"type":"Point","coordinates":[-50.4843771,-29.1061077]}'
-  title: >-
-    E você pode nos <span>encontrar</span> quando você quiser, é só dar uma
-    passada!
+  title: 'And you can always <span>find us</span> whenever you want, just stop by!'
 testimonialsSection:
   description: >-
     Não precisa tomar nossa palavra como verdade, dá uma olhada no que a galera
@@ -77,72 +75,40 @@ testimonialsSection:
   title: Alguns <span>depoimentos</span> de nossos clientes.
 about:
   description: >-
-    Oi! Bom, chegou a hora de nos apresentarmos da maneira correta.
+    Hey! Well, the time has come for us to present to ourselves in the correct
+    way.
 
 
-    Caso não se importe, gostaríamos de contar um pouquinho sobre nossas razões,
-    motivos e filosofia. Sobre o que nos faz acordar todas as manhãs e sonhar
-    todas as noites. Sobre altos e baixos, sobre nuvens e mares.
+    If you're not in a rush, we'd like to tell you a little about our reasons,
+    wills and philosophy. About what makes us wake up everyday and dream every
+    night. About highs and lows, about clouds and seas.
 
 
-    Ok, não vai ser tanta coisa assim, mas gostaríamos que emprestasse-nos um
-    pouquinho do seu tempo :)
+    Ok, it won't be that much, but we'd love if you borrow us a little of your
+    time :)
 
 
-    Caso esteja com pressa, tranquilo. Clica no botão aqui em baixo e vamos
-    direto pra ação!
+    In case you're in a rush, no problem. Just click down here in the button and
+    jump to the action!
   section1:
-    description: >-
-      Desde pequenos fomos criados com computadores aos nossos arredores. Não só
-      computadores, alguns de nós foi criado foi com tablets e smarphones
-      também.
-
-
-      Fomos inseridos a este mundo quando nem ao menos imaginávamos o tanto de
-      coisas que poderíamos fazer com elas.
-
-
-      Isso, somado ao que aprendemos ao longo dos anos, nos deu uma verdadeira
-      paixão por criar e manipular a tecnologia em prol de sonhos e seres
-      humanos.
+    description: "From an early age we were raised with computers around us. Not only computers, some of us was created was with tablets and smartphones as well.\r\n\nWe were introduced to this world when we didn't even imagine how much we could do with them.\r\n\nThis, in addition to what we've learned over the years, has given us a real passion for creating and manipulating technology for the sake of dreams and humans."
     image: /img/artificial-intelligence.svg
-    title: <span>Amor</span> pela tecnologia.
+    title: <span>Love</span> for technology.
   section2:
-    description: >-
-      Humanos são unidos através de semelhanças. É o que muitos chamam de
-      empatia.
-
-
-      Sempre, desde quando trabalhávamos como freelancers, tentamos oferecer a
-      melhor solução disponível, mas infelizmente isso não é comum.
-
-
-      Ao longo de nossas jornadas nos deparamos com diversos vendedores de sites
-      prontos, careiros e, em geral, pessoas que não são apaixonadas pelo que
-      fazem.
-
-
-      E esse é um dos motivos para estarmos aqui.
+    description: "Humans are united through similarities. This is what many call empathy.\r\n\r\nEver since we worked as freelancers, we have tried to offer the best solution available, but unfortunately this is not a constant.\r\n\r\nThroughout our journeys we come across a number of ready-made website vendors, careers and, in general, people who are not in love with what they do.\r\n\r\nAnd that is one of the reasons we are here."
     image: /img/people-debating-2.svg
-    title: <span>Indignação</span> com o mercado atual.
+    title: <span>Indignation</span> with the current market.
   section3:
-    description: >-
-      Pode parecer uma frase clichê, mas o segundo ponto mais forte que nos une
-      através da empatia é a vontade e o impulso de fazer do mundo um lugar
-      melhor.
-
-
-      Amor por desenvolver soluções, encontrar saídas para problemas, por deixar
-      o mundo mais bonito e, acima de tudo, facilitar a vida de pessoas.
+    description: "It may sound like a cliché, but the second strongest thing that unites us through empathy is the willingness and drive to make the world a better place.\r\n\r\nThe love of developing solutions, for finding ways out of problems, for making the world more beautiful and, above all, for facilitating people's lives."
     image: /img/startup.svg
-    title: 'Acima de tudo, <span>vontade</span> de fazer do mundo um lugar melhor.'
-  sectionTitle: Sobre a Marcossi Design
-  title: 'Uma breve história, caso você não se importe.'
+    title: 'Above all, <span>a drive</span> to make the world a better place.'
+  sectionTitle: About Marcossi Design
+  title: 'A brief story, if you''re not in a rush'
 contact:
   emailLabel: Email
   image: /img/messaging.svg
-  messageLabel: Mensagem
-  nameLabel: Nome
-  title: 'Vamos bater aquele <span>papinho</span>, por que não?'
+  messageLabel: Message
+  nameLabel: Name
+  title: 'Let''s <span>chat</span>, why not?'
 ---
 
