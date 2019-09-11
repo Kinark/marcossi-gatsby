@@ -9,7 +9,7 @@ import colors from '../constants/colors'
 import Card from './Card'
 import Title from './Title'
 import MDP from './MDP'
-import { ButtonAnchor } from '../Button'
+import { ButtonAnchor } from './Button'
 
 export default class Project extends PureComponent {
    state = {
