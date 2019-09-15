@@ -20,7 +20,7 @@ description: >-
 descriptionEn: "You can test the website's features by loggin in with:\r\nLogin: test@user.com  Password: testuser"
 date: 2019-09-08T16:34:41.453Z
 featuredimage: /img/perspective-website-psd-mock-up.jpg
-externalLink: feelybijuterias.marcossi.com.br
+externalLink: 'https://feelybijuterias.marcossi.com.br/'
 gallery:
   - image: /img/51f6efcf41794894b95bfdb3d09fe959_22_1920.jpg
     label: ''
