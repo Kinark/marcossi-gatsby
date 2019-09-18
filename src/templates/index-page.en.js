@@ -24,7 +24,7 @@ export default class IndexPageTemplate extends PureComponent {
             <Projects data={frontmatter.projectsTitle} projects={projects} />
             <FindUs data={frontmatter.whereWeAre} />
             <About data={frontmatter.about} logo={frontmatter.logo} />
-            <Contact data={frontmatter.contact} />
+            <Contact i18n="en" data={frontmatter.contact} />
          </Layout>
       )
    }

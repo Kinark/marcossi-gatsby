@@ -11,7 +11,7 @@ import ResponsiveImg from '../ResponsiveImg'
 import { Button } from '../Button'
 import { Input, Textarea } from '../Inputs'
 
-const About = props => {
+const About = ({ data, i18n }) => {
    const { value: valueName, bind: bindName, reset: resetName } = useInput('')
    const { value: valueEmail, bind: bindEmail, reset: resetEmail } = useInput('')
    const { value: valueMessage, bind: bindMessage, reset: resetMessage } = useInput('')
@@ -28,10 +28,10 @@ const About = props => {
          .then(() => {
             setLoading(false)
             Swal.fire({
-               title: 'Sucesso!',
-               text: 'Vamos entrar encontato!',
+               title: i18n === 'en' ? 'Success' : 'Sucesso!',
+               text: i18n === 'en' ? "We'll make contact!" : 'Vamos entrar em contato!',
                type: 'success',
-               confirmButtonText: 'Legal!'
+               confirmButtonText: i18n === 'en' ? 'Cool!' : 'Legal!'
             })
             resetName()
             resetEmail()
@@ -40,15 +40,14 @@ const About = props => {
          .catch(error => {
             setLoading(false)
             Swal.fire({
-               title: 'Ops!',
-               text: 'Algo deu errado. Você está conectado a internet?',
+               title: i18n === 'en' ? 'Oops!' : 'Ops!',
+               text: i18n === 'en' ? 'Something went wrong. Are you connected to internet?' : 'Algo deu errado. Você está conectado a internet?',
                type: 'error',
-               confirmButtonText: 'Que pena :('
+               confirmButtonText: i18n === 'en' ? 'What a shame :(' : 'Que pena :('
             })
          })
    }
 
-   const { data } = props
    return (
       <section className="section padded" id="contact">
          <div className="container">
