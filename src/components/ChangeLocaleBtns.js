@@ -30,23 +30,25 @@ export default class ChangeLocaleBtns extends PureComponent {
 
 const Wrapper = styled.div`
    position: fixed;
-   bottom: 0px;
+   bottom: 1rem;
    right: 1rem;
    z-index: 1;
+   padding-top: 1rem;
 `
 
 const ActivePill = styled(Button)`
+   margin: 0;
    width: 9rem;
 `
 
 const HiddenPill = styled(ButtonLink)`
-   width: 9rem;
+   margin: 0;
    position: absolute;
    transition: all 300ms ease-out;
    opacity: 0;
    bottom: 0;
    right: 0;
-   width: 100%;
+   width: 9rem;
    z-index: -1;
    &.active {
       bottom: 50px;
