@@ -23,7 +23,7 @@ const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
             <meta property="og:type" content="business.business" />
             <meta property="og:title" content={i18n === 'en' ? titleEn : title} />
             <meta property="og:url" content="/" />
-            <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
+            <meta property="og:image" content={i18n === 'en' ? `${withPrefix('/')}img/og-image-en.jpg` : `${withPrefix('/')}img/og-image.jpg`} />
          </Helmet>
          <div id="outer-container">
             <Navbar i18n={i18n} logo={logo} />
