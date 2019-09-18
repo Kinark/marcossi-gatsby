@@ -46,7 +46,7 @@ const StyledCard = styled(Card)`
    display: flex;
    align-items: center;
    @media (max-width: 767px) {
-      height: 550px;
+      height: auto;
       flex-direction: column;
    }
 `
@@ -58,7 +58,7 @@ const CardImg = styled.div`
    height: 100%;
    width: 100%;
    @media (max-width: 767px) {
-      height: 260px;
+      flex-basis: 260px;
    }
 `
 
