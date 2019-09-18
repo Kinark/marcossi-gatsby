@@ -95,11 +95,32 @@ about:
     image: /img/artificial-intelligence.svg
     title: <span>Love</span> for technology.
   section2:
-    description: "Humans are united through similarities. This is what many call empathy.\r\n\r\nEver since we worked as freelancers, we have tried to offer the best solution available, but unfortunately this is not a constant.\r\n\r\nThroughout our journeys we come across a number of ready-made website vendors, careers and, in general, people who are not in love with what they do.\r\n\r\nAnd that is one of the reasons we are here."
+    description: >-
+      Humans are united through similarities. This is what many call empathy.
+
+
+      Ever since we worked as freelancers, we have tried to offer the best
+      solution available, but unfortunately this is not a constant.
+
+
+      Throughout our journeys, we come across several of ready-made website
+      sellers, people who charges high prices and, in general, people who are
+      not in love with what they do.
+
+
+      And that is one of the reasons we are here.
     image: /img/people-debating-2.svg
     title: <span>Indignation</span> with the current market.
   section3:
-    description: "It may sound like a cliché, but the second strongest thing that unites us through empathy is the willingness and drive to make the world a better place.\r\n\r\nThe love of developing solutions, for finding ways out of problems, for making the world more beautiful and, above all, for facilitating people's lives."
+    description: >-
+      It may sound like a cliché, but the second strongest thing that unites us
+      through empathy is the willingness and the drive to make the world a
+      better place.
+
+
+      The love of developing solutions, for finding ways out of problems, for
+      making the world more beautiful and, above all, for facilitating people's
+      lives.
     image: /img/startup.svg
     title: 'Above all, <span>a drive</span> to make the world a better place.'
   sectionTitle: About Marcossi Design
