@@ -1,7 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
 import styled, { createGlobalStyle } from 'styled-components'
-import { withPrefix } from 'gatsby'
 
 import colors from '../constants/colors'
 
@@ -9,6 +8,9 @@ import './styles.scss'
 import useSiteMetadata from './SiteMetadata'
 import Navbar from './Navbar'
 import ChangeLocaleBtns from './ChangeLocaleBtns'
+
+import ogImg from '../img/og-img.png'
+import ogImgEn from '../img/og-img-en.png'
 
 const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
    const { title, description, titleEn, descriptionEn } = useSiteMetadata()
@@ -23,7 +25,7 @@ const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
             <meta property="og:type" content="business.business" />
             <meta property="og:title" content={i18n === 'en' ? titleEn : title} />
             <meta property="og:url" content="/" />
-            <meta property="og:image" content={i18n === 'en' ? `${withPrefix('/')}img/og-image-en.jpg` : `${withPrefix('/')}img/og-image.jpg`} />
+            <meta property="og:image" content={i18n === 'en' ? ogImgEn : ogImg} />
          </Helmet>
          <div id="outer-container">
             <Navbar i18n={i18n} logo={logo} />
