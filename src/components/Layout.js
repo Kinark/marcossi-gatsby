@@ -21,7 +21,7 @@ const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
             <meta name="theme-color" content={colors.BG} />
 
             <meta property="og:type" content="business.business" />
-            <meta property="og:title" content={title} />
+            <meta property="og:title" content={i18n === 'en' ? titleEn : title} />
             <meta property="og:url" content="/" />
             <meta property="og:image" content={`${withPrefix('/')}img/og-image.jpg`} />
          </Helmet>
