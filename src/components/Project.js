@@ -65,11 +65,13 @@ export default class Project extends PureComponent {
                         <div onClick={() => this.setState({ isOpen: true, photoIndex: i })}>
                            <StyledImg fluid={el.image.childImageSharp.fluid} />
                         </div>
-                        <div className="row xs-center section padded no-pad-top">
-                           <div className="col xs12 l6">
-                              <MDP>{el.label}</MDP>
+                        {!!el.label && (
+                           <div className="row xs-center section padded no-pad-top">
+                              <div className="col xs12 l6">
+                                 <MDP>{el.label}</MDP>
+                              </div>
                            </div>
-                        </div>
+                        )}
                      </React.Fragment>
                   ))}
                </div>
@@ -91,6 +93,7 @@ const StyledCard = styled(Card)`
 
 const StyledImg = styled(Img)`
    border-radius: 20px;
+   margin-bottom: 1rem;
    /* width: 100%; */
    cursor: pointer;
    transition: filter 250ms;
