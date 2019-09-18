@@ -14,7 +14,7 @@ description: Lorem ipsum.
 descriptionEn: Lorem ipsum.
 date: 2019-09-09T18:47:23.270Z
 featuredimage: /img/df12e3b39d5f4981819f94ba908e3e00_19_960.jpg
-externalLink: thelastflame.com.br/
+externalLink: 'https://thelastflame.com.br/'
 gallery:
   - image: /img/ef204a9554dd461b9a666243bf9fd84a_15_960.jpg
     label: ''

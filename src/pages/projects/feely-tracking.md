@@ -14,7 +14,7 @@ description: ' '
 descriptionEn: ' '
 date: 2019-09-08T16:24:49.857Z
 featuredimage: /img/96342_feelycombr_15_1920.jpg
-externalLink: feelytracking.marcossi.com.br
+externalLink: 'https://feelytracking.marcossi.com.br/'
 gallery:
   - image: /img/96343_feelycombr_9_1920.jpg
     label: ''
