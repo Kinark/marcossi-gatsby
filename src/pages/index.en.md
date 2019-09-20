@@ -69,10 +69,10 @@ whereWeAre:
   title: 'And you can always <span>find us</span> whenever you want, just stop by!'
 testimonialsSection:
   description: >-
-    Não precisa tomar nossa palavra como verdade, dá uma olhada no que a galera
-    está falando da gente!
+    You don't have to trust us, take a look what people are saying about our
+    work!
   image: /img/personal-text.svg
-  title: Alguns <span>depoimentos</span> de nossos clientes.
+  title: Some <span>testimonies</span> from our clients.
 about:
   description: >-
     Hey! Well, the time has come for us to present to ourselves in the correct
