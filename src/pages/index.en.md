@@ -72,7 +72,7 @@ testimonialsSection:
     You don't have to trust us, take a look what people are saying about our
     work!
   image: /img/personal-text.svg
-  title: Some <span>testimonies</span> from our clients.
+  title: Some <span>testimonials</span> from our clients.
 about:
   description: >-
     Hey! Well, the time has come for us to present to ourselves in the correct
