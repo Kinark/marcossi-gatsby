@@ -33,7 +33,7 @@
     "parcel-bundler": "^1.12.3",
     "prop-types": "^15.6.0",
     "react": "^16.8.4",
-    "react-alice-carousel": "^1.15.2",
+    "react-alice-carousel": "^1.16.0",
     "react-burger-menu": "^2.6.11",
     "react-dom": "^16.8.4",
     "react-helmet": "^5.2.0",

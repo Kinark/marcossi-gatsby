@@ -5908,9 +5908,9 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.0"
 
-"favicons-webpack-plugin@git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
+"favicons-webpack-plugin@https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf":
   version "0.0.9"
-  resolved "git+https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
+  resolved "https://github.com/Creatiwity/favicons-webpack-plugin.git#0872de414061baaad0a2853c77ae75bc38b8bbbf"
   dependencies:
     core-js "^2.5.7"
     favicons "^5.1.1"
@@ -12599,7 +12599,7 @@ rc@^1.2.7, rc@^1.2.8:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-alice-carousel@^1.15.2:
+react-alice-carousel@^1.16.0:
   version "1.16.0"
   resolved "https://registry.yarnpkg.com/react-alice-carousel/-/react-alice-carousel-1.16.0.tgz#a45ae8172f2cdf4864f9c86745d178c93fc4ec81"
   integrity sha512-IZDdOpNS53W2o5+IdSITTt4sXkl0LzsKPa3KNrs6TiTWIlad2SSpSMQQOl6hVWLfNPo3BJvgwr7IHlVETWGGLA==
