@@ -30,3 +30,14 @@ collections:
              widget: 'list',
              fields: [{ label: 'Image', name: 'image', widget: 'image' }, { label: 'Label', name: 'label', widget: 'markdown', required: false, default: '' }],
           }
+
+   - name: 'pages'
+     label: 'Pages'
+     delete: false
+     files:
+        - file: 'src/pages/index.md'
+          label: 'Landing Page'
+          name: 'index'
+          fields:
+             - { label: 'Template Key', name: 'templateKey', widget: 'hidden', default: 'index-page' }
+             - { label: 'Template Key En', name: 'templateKeyEn', widget: 'hidden', default: '' }
