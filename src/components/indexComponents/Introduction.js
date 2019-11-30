@@ -1,35 +1,38 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled from 'styled-components'
+
+import colors from '../../constants/colors'
+import eastwoodDone from '../../img/illustrations/eastwood-done.svg'
 
 import Title from '../Title'
 import Subtitle from '../Subtitle'
 import ResponsiveImg from '../ResponsiveImg'
+import FullHeight from '../FullHeight'
 import { ButtonLink } from '../Button'
 
-const Introduction = props => {
-   const { logo, data } = props
+const Introduction = ({ subtitle, btn }) => {
    return (
-      <Section>
-         <div className="container" id="home">
-            <div className="row xs-middle">
-               <div className="col xs12 l5">
-                  <ResponsiveImg inline maxWidth="158" src={logo.publicURL} alt="" />
-                  <Title>{data.name}</Title>
-                  <Subtitle dangerouslySetInnerHTML={{ __html: data.subtitle }} />
-                  <div>{data.description}</div>
-                  <ButtonLink to="/#contact">Vamos conversar!</ButtonLink>
+      <FullPage>
+         <FullHeight className="container" id="home">
+            <FullHeight className="row xs-bottom">
+               <div className="col xs12 xs-last l-first l4">
+                  <Title bolder>Marcossi Design</Title>
+                  <Subtitle>{subtitle}</Subtitle>
+                  <ButtonLink to="/#contact">{btn}</ButtonLink>
                </div>
-               <div className="col xs12 l7 hide-on-med-and-down right-align">
-                  <ResponsiveImg inline maxWidth="463" src={data.image.publicURL} alt="" />
+               <div className="col xs12 l8 center">
+                  <ResponsiveImg inline maxWidth="955" src={eastwoodDone} alt="" />
                </div>
-            </div>
-         </div>
-      </Section>
+            </FullHeight>
+         </FullHeight>
+      </FullPage>
    )
 }
 
 export default Introduction
 
-const Section = styled.section`
-   padding: 15vh 0 10vh;
+const FullPage = styled.section`
+   height: 100vh;
+   background-color: ${colors.SAND};
+   padding-bottom: 10rem;
 `

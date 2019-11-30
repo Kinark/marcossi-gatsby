@@ -4,10 +4,9 @@ import styled from 'styled-components'
 import { Link } from 'gatsby'
 
 import colors from '../constants/colors'
+import logo from '../img/illustrations/Logo.svg'
 
-
-
-const Navbar = ({ logo, i18n }) => {
+const Navbar = ({ i18n }) => {
    const [isMenuOpen, setMenuOpen] = useState(false)
    const linksPrefix = i18n ? '/en' : ''
    return (
@@ -15,7 +14,7 @@ const Navbar = ({ logo, i18n }) => {
          <Nav>
             <div className="container">
                <Link to={`${linksPrefix}/#`}>
-                  <img src={logo.publicURL} width="65" alt="" />
+                  <Logo src={logo} width="65" alt="" />
                </Link>
                <ul className="hide-on-small-and-down">
                   <li>
@@ -65,17 +64,22 @@ const Navbar = ({ logo, i18n }) => {
    )
 }
 
+const Logo = styled.img`
+   margin-right: 1rem;
+`;
+
 const Nav = styled.nav`
    position: fixed;
    top: 0;
    left: 0;
    width: 100%;
-   background-color: rgba(251, 252, 255, 0.85);
    z-index: 2;
-   padding: 0.75rem 0;
+   background-color: rgba(242, 231, 229, 0.75);
+   padding: 2rem 0;
+   backdrop-filter: saturate(180%) blur(20px);
    .container {
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: center;
       ul {
          margin: 0;
@@ -102,32 +106,32 @@ const sidebarStyles = {
       top: '24px'
    },
    bmBurgerBars: {
-      background: colors.TITLE
+      background: colors.OCEAN
    },
    bmBurgerBarsHover: {
-      background: colors.BODY
+      background: colors.OCEAN
    },
    bmCrossButton: {
       height: '24px',
       width: '24px'
    },
    bmCross: {
-      background: colors.BG
+      background: colors.SAND
    },
    bmMenuWrap: {
       position: 'fixed',
       height: '100%'
    },
    bmMenu: {
-      background: colors.BG,
+      background: colors.SAND,
       padding: '2.5em 1.5em 0',
       fontSize: '1.15em'
    },
    bmMorphShape: {
-      fill: colors.BG
+      fill: colors.SAND
    },
    bmItemList: {
-      color: colors.TITLE,
+      color: colors.OCEAN,
       padding: '0.8em'
    },
    bmItem: {

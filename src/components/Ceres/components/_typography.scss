@@ -7,15 +7,15 @@ html {
   line-height: 1.5;
 
   @media only screen and (min-width: 0) {
-    font-size: 14px;
+    font-size: 8px;
+  }
+
+  @media #{$medium-and-up} {
+    font-size: 9px;
   }
 
   @media #{$large-and-up} {
-    font-size: 14.5px;
-  }
-
-  @media #{$large-and-up} {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   font-family: $font-stack;

@@ -2,10 +2,13 @@ import React, { useState } from 'react'
 import styled, { css } from 'styled-components'
 import Swal from 'sweetalert2'
 
+import messengeSent from '../../img/illustrations/eastwood-message-sent.svg'
+
 import colors from '../../constants/colors'
 import useInput from '../../utils/useInput'
 import urlEncodeObject from '../../utils/urlEncodeObject'
 
+import Title from '../Title'
 import Subtitle from '../Subtitle'
 import ResponsiveImg from '../ResponsiveImg'
 import { Button } from '../Button'
@@ -52,10 +55,10 @@ const About = ({ data, i18n }) => {
       <section className="section padded" id="contact">
          <div className="container">
             <div className="section">
-               <div className="row xs-center section padded no-pad-top">
-                  <div className="col xs12 l6 center">
-                     <ResponsiveImg inline maxWidth="545" src={data.image.publicURL} alt="" />
-                     <Subtitle dangerouslySetInnerHTML={{ __html: data.title }} />
+               <div className="row section padded xs-middle">
+                  <div className="col xs12 l6">
+                     <Title>{data.title}</Title>
+                     <Subtitle>{data.subtitle}</Subtitle>
                      <FormWrapper loading={loading ? 1 : 0}>
                         <form onSubmit={handleSubmit} action="/" className="section">
                            <input type="hidden" name="form-name" value="contact" />
@@ -67,6 +70,9 @@ const About = ({ data, i18n }) => {
                            </div>
                         </form>
                      </FormWrapper>
+                  </div>
+                  <div className="col xs12 l6 xs-first l-last center">
+                     <ResponsiveImg inline maxWidth="545" src={messengeSent} alt="" />
                   </div>
                </div>
             </div>

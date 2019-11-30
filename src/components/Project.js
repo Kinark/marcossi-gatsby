@@ -45,7 +45,7 @@ export default class Project extends PureComponent {
                   }
                />
             )}
-            <section className="container">
+            <Section className="container">
                <div className="row xs-middle">
                   <div className="col xs12 l6">
                      <StyledCard>
@@ -75,11 +75,15 @@ export default class Project extends PureComponent {
                      </React.Fragment>
                   ))}
                </div>
-            </section>
+            </Section>
          </React.Fragment>
       )
    }
 }
+
+const Section = styled.section`
+   padding-top: 10rem;
+`
 
 const StyledCard = styled(Card)`
    padding: 0;

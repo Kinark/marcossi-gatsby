@@ -2,31 +2,26 @@ import styled, { css } from 'styled-components'
 
 import colors from '../constants/colors'
 
-const transitionDuration = '100ms';
-
 const InputBase = css`
    display: block;
    width: 100%;
-   border: solid 2px #3a386e;
-   color: #3e3d5d;
+   border: none;
+   border-bottom: solid 1px ${colors.OCEAN};
+   color:  ${colors.OCEAN};
    padding: 13px 25px;
-   border-radius: 25px;
-   margin: 0.75rem 0px;
+   margin: 1rem 0px;
    background: transparent;
-   transition: border ${transitionDuration} ease-out, background ${transitionDuration} ease-out, box-shadow ${transitionDuration} ease-out, padding ${transitionDuration} ease-out;
+   font-size: 2.4rem;
+   font-weight: 300;
+   font-family: 'soleil', sans-serif;
+   margin-bottom: calc(1rem + 1px);
    &::placeholder {
       color: ${colors.ACCENT};
    }
-   &:hover {
-      border-width: 3px;
-      padding: 12px 24px;
-   }
-   &:focus {
-      border-width: 0;
-      padding: 15px 27px;
-      background: white;
-      box-shadow: 0px 10px 15px 0px ${colors.SHADOW};
+   &:hover, &:focus {
+      border-width: 2px;
       outline: none;
+      margin-bottom: 1rem;
    }
 `
 

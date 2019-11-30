@@ -1,6 +1,6 @@
 import React from 'react'
 import { Helmet } from 'react-helmet'
-import styled, { createGlobalStyle } from 'styled-components'
+import { createGlobalStyle } from 'styled-components'
 
 import colors from '../constants/colors'
 
@@ -12,7 +12,7 @@ import ChangeLocaleBtns from './ChangeLocaleBtns'
 import ogImg from '../img/og-img.png'
 import ogImgEn from '../img/og-img-en.png'
 
-const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
+const TemplateWrapper = ({ i18n, children }) => {
    const { title, description, titleEn, descriptionEn } = useSiteMetadata()
    return (
       <React.Fragment>
@@ -28,28 +28,22 @@ const TemplateWrapper = ({ i18n, bgImg, logo, children }) => {
             <meta property="og:image" content={i18n === 'en' ? ogImgEn : ogImg} />
          </Helmet>
          <div id="outer-container">
-            <Navbar i18n={i18n} logo={logo} />
-            <Main id="page-wrap">{children}</Main>
+            <Navbar i18n={i18n} />
+            <main id="page-wrap">{children}</main>
             <ChangeLocaleBtns i18n={i18n} />
          </div>
-         <GlobalStyle bgImg={bgImg.publicURL} />
+         <GlobalStyle />
       </React.Fragment>
    )
 }
 
-const Main = styled.main`
-   padding-top: 5rem;
-`
-
 const GlobalStyle = createGlobalStyle`
-  body {
+  html {
    font-family: soleil, sans-serif;
-   color: ${colors.BODY};
-   font-size: 16px;
-   background-color: ${colors.BG};
-   background-image: url(${({ bgImg }) => bgImg});
-   background-position: 56% 440px;
-   background-repeat: no-repeat;
+   font-weight: 300;
+  }
+  body {
+     font-size: 1.6rem;
   }
   *:focus {
      outline: none;

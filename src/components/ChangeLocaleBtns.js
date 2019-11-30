@@ -38,7 +38,7 @@ const Wrapper = styled.div`
 
 const ActivePill = styled(Button)`
    margin: 0;
-   width: 9rem;
+   width: 14rem;
 `
 
 const HiddenPill = styled(ButtonLink)`
@@ -48,7 +48,7 @@ const HiddenPill = styled(ButtonLink)`
    opacity: 0;
    bottom: 0;
    right: 0;
-   width: 9rem;
+   width: 14rem;
    z-index: -1;
    &.active {
       bottom: 50px;

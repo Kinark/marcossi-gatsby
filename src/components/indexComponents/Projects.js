@@ -1,37 +1,73 @@
 import React from 'react'
 import styled from 'styled-components'
 import Img from 'gatsby-image'
+import AliceCarousel from 'react-alice-carousel'
 
-import colors from '../../constants/colors'
+import arrowRight from '../../img/illustrations/arrow-right.svg'
 
 import Card from '../Card'
 import Title from '../Title'
+import SmallTitle from '../SmallTitle'
+import Subtitle from '../Subtitle'
 import MDP from '../MDP'
 import { ButtonLink, ButtonAnchor } from '../Button'
 
-const Projects = props => {
-   const { data, projects } = props
+const aliceOptions = {
+   fadeOutAnimation: true,
+   mouseTrackingEnabled: true,
+   responsive: {
+      0: {
+         items: 1
+      },
+      600: {
+         items: 2
+      },
+      1024: {
+         items: 3
+      },
+      1700: {
+         items: 4
+      }
+   },
+   buttonsDisabled: true,
+   infinite: false
+}
+
+const Projects = ({ data, projects }) => {
    const pathname = typeof window !== `undefined` ? window.location.pathname : ''
    const currentPath = pathname === '/' ? '' : pathname
+   const handleOnDragStart = e => e.preventDefault()
+
+   const projectsCardsArray = projects.map(({ node }) => (
+      <StyledCard onDragStart={handleOnDragStart} key={node.frontmatter.title}>
+         <CardImg>
+            <StyledImg onDragStart={handleOnDragStart} fluid={node.frontmatter.featuredimage.childImageSharp.fluid} />
+         </CardImg>
+         <CardContent>
+            <div>
+               <SmallTitle className="no-mrg-bot">{node.frontmatter.title}</SmallTitle>
+               <MDP className="no-mrg-top">{node.frontmatter.excerpt}</MDP>
+            </div>
+            <Buttons>
+               <StyledButtonLink to={currentPath + node.fields.slug}>{data.learnMore}</StyledButtonLink>
+               {!!node.frontmatter.externalLink && <StyledButtonAnchor href={node.frontmatter.externalLink}>{data.visitWebsite}</StyledButtonAnchor>}
+            </Buttons>
+         </CardContent>
+      </StyledCard>
+   ))
+   projectsCardsArray.unshift(
+      <FirstFakeCard onDragStart={handleOnDragStart}>
+         <Title>{data.title}</Title>
+         <Subtitle>{data.caption}</Subtitle>
+         <img src={arrowRight} alt="" />
+      </FirstFakeCard>
+   )
    return (
       <section className="section padded" id="projects">
          <div className="container">
-            <div className="section center no-pad-top">
-               <Title>{data}</Title>
-            </div>
-            {projects.map(({ node }) => (
-               <StyledCard key={node.frontmatter.title}>
-                  <CardImg>
-                     <StyledImg fluid={node.frontmatter.featuredimage.childImageSharp.fluid} />
-                  </CardImg>
-                  <CardContent>
-                     <Title>{node.frontmatter.title}</Title>
-                     <Excerpt>{node.frontmatter.excerpt}</Excerpt>
-                     <ButtonLink to={currentPath + node.fields.slug}>Saiba mais</ButtonLink>
-                     {!!node.frontmatter.externalLink && <ButtonAnchor href={node.frontmatter.externalLink}>Visite o site</ButtonAnchor>}
-                  </CardContent>
-               </StyledCard>
-            ))}
+            <AliceWrapper>
+               <AliceCarousel items={projectsCardsArray} {...aliceOptions} />
+            </AliceWrapper>
          </div>
       </section>
    )
@@ -39,16 +75,37 @@ const Projects = props => {
 
 export default Projects
 
+const Buttons = styled.div`
+   display: flex;
+   @media (max-width: 600px) {
+      justify-content: center;
+   }
+`
+
+const AliceWrapper = styled.div`
+   @media (max-width: 600px) {
+      .alice-carousel__stage-item {
+         text-align: center;
+      }
+   }
+`
+
+const FirstFakeCard = styled.div`
+   max-width: 388px;
+   width: 100%;
+   display: inline-block;
+`
+
 const StyledCard = styled(Card)`
    padding: 0;
    overflow: hidden;
-   height: 400px;
-   display: flex;
+   height: 440px;
+   display: inline-flex;
    align-items: center;
-   @media (max-width: 767px) {
-      height: auto;
-      flex-direction: column;
-   }
+   flex-direction: column;
+   margin: 0 2rem;
+   width: calc(100% - 4rem);
+   /* text-align: left; */
 `
 
 const CardImg = styled.div`
@@ -57,9 +114,7 @@ const CardImg = styled.div`
    overflow: hidden;
    height: 100%;
    width: 100%;
-   @media (max-width: 767px) {
-      flex-basis: 260px;
-   }
+   flex-shrink: 0;
 `
 
 const StyledImg = styled(Img)`
@@ -80,9 +135,17 @@ const StyledImg = styled(Img)`
 const CardContent = styled.div`
    text-overflow: ellipsis;
    flex-basis: 55%;
-   margin: 35px;
+   padding: 1rem 2rem 2rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   width: 100%;
 `
 
-const Excerpt = styled(MDP)`
-   color: ${colors.ACCENT};
+const StyledButtonLink = styled(ButtonLink)`
+   font-size: 1.6rem;
+`
+
+const StyledButtonAnchor = styled(ButtonAnchor)`
+   font-size: 1.6rem;
 `
