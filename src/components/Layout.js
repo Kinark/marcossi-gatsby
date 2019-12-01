@@ -5,6 +5,7 @@ import { createGlobalStyle } from 'styled-components'
 import colors from '../constants/colors'
 
 import './styles.scss'
+import './nonPurgeStyles.scss'
 import useSiteMetadata from './SiteMetadata'
 import Navbar from './Navbar'
 import ChangeLocaleBtns from './ChangeLocaleBtns'
