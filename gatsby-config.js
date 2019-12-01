@@ -95,7 +95,7 @@ module.exports = {
          resolve: 'gatsby-plugin-purgecss', // purges all unused/unreferenced css rules
          options: {
             develop: false, // Activates purging in npm run develop
-            purgeOnly: ['/styles.scss'] // applies purging only on the bulma css file
+            purgeOnly: ['/styles.scss'], // applies purging only on the bulma css file
             ignore: ['react-alice-carousel/']
          }
       }, // must be after other CSS plugins
