@@ -66,7 +66,7 @@ const About = ({ data, i18n }) => {
                            <Input type="email" placeholder={data.emailLabel} required {...bindEmail} />
                            <Textarea placeholder={data.messageLabel} required {...bindMessage} />
                            <div className="right-align">
-                              <Button type="submit">Enviar</Button>
+                              <Button type="submit">{data.sendLabel}</Button>
                            </div>
                         </form>
                      </FormWrapper>

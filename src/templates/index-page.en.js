@@ -23,8 +23,8 @@ const data = {
    slogan: 'The true meaning of design.',
    contactButton: 'Let\'s talk!',
    whatWeDo: {
-      title: 'O que fazemos',
-      subtitle: 'De fato, muitas coisas, mas todas com perfeição.',
+      title: 'What we do',
+      subtitle: 'A lot indeed.',
       features: [
          {
             icon: compass,
@@ -65,7 +65,7 @@ const data = {
          'We love to do what we do and we\'re proud to deliver the best quality for the lowest price possible, all to make the technology and the advance available for many people as possible.'
    },
    portfolio: {
-      title: 'A little of our job',
+      title: 'A little about our work',
       caption: 'Some of the projects we had the oppotunity to work on.',
       learnMore: 'Learn more',
       visitWebsite: 'Go to site'
@@ -81,7 +81,7 @@ const data = {
       title: 'About us',
       section1: {
          subtitle: 'A brief story, if you\'re not in a rush',
-         caption1: 'Hey! Well, the time has come for us to present to ourselves in the correct way.',
+         caption1: 'Hey! Well, the time has come for us meet eachother.',
          caption2:
             'If you\'re not in a rush, we\'d like to tell you a little about our reasons, wills and philosophy. About what makes us wake up everyday and dream every night. About highs and lows, about clouds and seas.',
          caption3: 'Ok, it won\'t be that much, but we\'d love if you borrow us a little of your time :)'
@@ -89,28 +89,28 @@ const data = {
       section2: {
          subtitle: 'Love for technology.',
          caption1:
-            'From an early age we were raised with computers around us. Not only computers, some of us was created was with tablets and smartphones as well.',
+            'We were raised with computers around us. Not only computers, some of us were raised with tablets and smartphones as well.',
          caption2: 'We were introduced to this world when we didn\'t even imagine how much we could do with them.',
          caption3:
             'This, in addition to what we\'ve learned over the years, has given us a real passion for creating and manipulating technology for the sake of dreams and humans.'
       },
       section3: {
          subtitle: 'Indignation with the current market.',
-         caption1: 'Humans are united through similarities. This is what many call empathy.',
+         caption1: 'Humans are united through similarities. This is what\'s called empathy.',
          caption2: 'Ever since we worked as freelancers, we have tried to offer the best solution available, but unfortunately this is not a constant.',
          caption3:
-            'Throughout our journeys, we come across several of ready-made website sellers, people who charges high prices and, in general, people who are not in love with what they do. And that is one of the reasons we are here.'
+            'Throughout our journeys, we\'ve came across several of ready-made website sellers, people who charges high prices and, in general, people who are not in love with what they do. And that is one of the reasons we are here.'
       },
       section4: {
          subtitle: 'Above all, a drive to make the world a better place.',
          caption1:
             'It may sound like a cliché, but the second strongest thing that unites us through empathy is the willingness and the drive to make the world a better place.',
          caption2:
-            'AThe love of developing solutions, for finding ways out of problems, for making the world more beautiful and, above all, for facilitating people\'s lives.'
+            'The love for developing solutions, for finding ways out of problems, for making the world more beautiful and, above all, for facilitating people\'s lives.'
       }
    },
    contact: {
-      title: 'Contato',
+      title: 'Get in touch',
       subtitle: 'Let\'s chat, why not?',
       subjects: [
          { icon: compass, title: 'Sites' },
