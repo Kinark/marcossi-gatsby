@@ -9,6 +9,12 @@ module.exports = {
    },
    plugins: [
       {
+         resolve: `gatsby-plugin-google-analytics`,
+         options: {
+            trackingId: 'UA-128647381-1'
+         }
+      },
+      {
          resolve: `gatsby-plugin-manifest`,
          options: {
             icon: `src/favicon.png`,
