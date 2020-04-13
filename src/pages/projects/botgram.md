@@ -3,7 +3,7 @@ templateKey: project-page
 templateKeyEn: project-page.en
 title: Botgram
 titleEn: Botgram
-featuredpost: false
+featuredpost: true
 excerpt: Uma ferramenta para Instagram.
 excerptEn: A tool for Instagram.
 description: Uma ferramenta para Instagram.
