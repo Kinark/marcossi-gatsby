@@ -1,8 +1,8 @@
 ---
 templateKey: project-page
 templateKeyEn: project-page.en
-title: App - Dose certa
-titleEn: App - Dose certa
+title: App — Dose certa
+titleEn: App — Dose certa
 featuredpost: true
 excerpt: Um aplicativo para dosagem de fertilizante.
 excerptEn: Um aplicativo para dosagem de fertilizante.
