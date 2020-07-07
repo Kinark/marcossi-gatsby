@@ -14,7 +14,7 @@ const Introduction = ({ subtitle, btn }) => {
    return (
       <FullPage>
          <FullHeight className="container" id="home">
-            <FullHeight className="row xs-bottom">
+            <FullHeightRow className="row xs-bottom">
                <div className="col xs12 xs-last l-first l4">
                   <Title bolder>Marcossi Design</Title>
                   <Subtitle>{subtitle}</Subtitle>
@@ -23,13 +23,19 @@ const Introduction = ({ subtitle, btn }) => {
                <div className="col xs12 l8 center">
                   <ResponsiveImg inline maxWidth="955" src={eastwoodDone} alt="" />
                </div>
-            </FullHeight>
+            </FullHeightRow>
          </FullHeight>
       </FullPage>
    )
 }
 
 export default Introduction
+
+const FullHeightRow = styled(FullHeight)`
+   @media (max-width: 991px) {
+      align-content: flex-end;
+   }
+`
 
 const FullPage = styled.section`
    height: 100vh;
