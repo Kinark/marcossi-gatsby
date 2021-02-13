@@ -19,14 +19,15 @@ const TemplateWrapper = ({ i18n, children }) => {
       <React.Fragment>
          <Helmet>
             <html lang="en" />
-            <title>{i18n === 'en' ? titleEn : title }</title>
-            <meta name="description" content={i18n === 'en' ? descriptionEn : description } />
+            <title>{i18n === 'en' ? titleEn : title}</title>
+            <meta name="description" content={i18n === 'en' ? descriptionEn : description} />
             <meta name="theme-color" content={colors.BG} />
 
             <meta property="og:type" content="business.business" />
             <meta property="og:title" content={i18n === 'en' ? titleEn : title} />
             <meta property="og:url" content="/" />
             <meta property="og:image" content={i18n === 'en' ? ogImgEn : ogImg} />
+            <meta property="og:description" content={i18n === 'en' ? descriptionEn : description} />
          </Helmet>
          <div id="outer-container">
             <Navbar i18n={i18n} />
