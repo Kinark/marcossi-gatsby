@@ -34,7 +34,7 @@ const Navbar = ({ i18n }) => {
                      <Link to={`${linksPrefix}/#contact`}>{i18n === 'en' ? 'Contact' : 'Contato'}</Link>
                   </li>
                   <li>
-                     <a href="https://blog.marcossi.com" target="_blank">Blog</Link>
+                     <a href="https://blog.marcossi.com" target="_blank">Blog</a>
                   </li>
                </ul>
             </div>
