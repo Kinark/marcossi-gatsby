@@ -34,14 +34,16 @@ const Navbar = ({ i18n }) => {
                      <Link to={`${linksPrefix}/#contact`}>{i18n === 'en' ? 'Contact' : 'Contato'}</Link>
                   </li>
                   <li>
-                     <a href="https://blog.marcossi.com" target="_blank">Blog</a>
+                     <a href="https://blog.marcossi.com" target="_blank">
+                        Blog
+                     </a>
                   </li>
                </ul>
             </div>
          </Nav>
          <Menu
             isOpen={isMenuOpen}
-            onStateChange={state => setMenuOpen(state.isOpen)}
+            onStateChange={(state) => setMenuOpen(state.isOpen)}
             styles={sidebarStyles}
             right
             pageWrapId="page-wrap"
@@ -62,6 +64,9 @@ const Navbar = ({ i18n }) => {
             <Link onClick={() => setMenuOpen(false)} to={`${linksPrefix}/#contact`}>
                {i18n === 'en' ? 'Contact' : 'Contato'}
             </Link>
+            <a href="https://blog.marcossi.com" target="_blank">
+               Blog
+            </a>
          </Menu>
       </React.Fragment>
    )
@@ -69,7 +74,7 @@ const Navbar = ({ i18n }) => {
 
 const Logo = styled.img`
    margin-right: 1rem;
-`;
+`
 
 const Nav = styled.nav`
    position: fixed;
